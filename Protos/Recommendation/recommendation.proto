@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package Dressy.Recommendation;
+
+service Recommendation {
+
+  rpc GetRecommendationsCards (RecommendationRequest) returns (RecommendationResponse);
+  rpc UpdateClientEmbeddingStringVector (ClientEmbeddingStringRequest) returns (ClientEmbeddingResponse);
+  rpc UpdateClientEmbeddingFloatVector (ClientEmbeddingFloatRequest) returns (ClientEmbeddingResponse);
+  rpc UpdateClientEmbeddings (ClientEmbeddings) returns (ClientEmbeddingResponse);
+}
+
+message UUID {
+  string value = 1;
+}
+
+message RecommendationRequest {
+  uint64 client_id = 1;
+  int32 count = 2;
+}
+
+message RecommendationResponse {
+  repeated UUID requestVector_id = 1;
+}
+
+message ClientEmbeddingStringRequest {
+  repeated string requestVector = 1;
+}
+
+message ClientEmbeddings {
+  uint64 userId = 1;
+  UUID productId = 2;
+  bool isLiked = 3;
+}
+
+message ClientEmbeddingResponse{
+  bool is_update = 1;
+}
+message ClientEmbeddingFloatRequest {
+  repeated float requestVector = 1;
+}

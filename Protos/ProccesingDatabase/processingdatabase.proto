@@ -1,0 +1,212 @@
+syntax = "proto3";
+
+import public "FileExchange/fileexchange.proto";
+import "Common/common.proto";
+
+package Dressy.ProcessingDatabase;
+
+/*		'Records' table			*/
+service ProcessingDatabaseRecords {
+
+  // Inserts data into a table, one at a time, in a batch, or from a csv file
+  rpc InsertRecords(InsertRecordsRequest) returns (InsertRecordsResponse);
+  rpc ImportCsv(stream FileExchange.FileData) returns (FileExchange.UploadStatus);
+
+  // Getting data by status, allowed only for preprocessor and processor
+  // For preprocessor allowed status is only NEW, for processor allowed NEW and PREPROCESSED (depends on processor posibilities) status
+  rpc GetRecordsByStatus(GetRecordsByStatusRequest) returns (GetRecordsByStatusResponse);
+
+  rpc GetEmbeddingsByStatus(GetEmbeddingsByStatusRequest) returns (GetEmbeddingsByStatusResponse);
+
+  // Getting data by Id, use for getting data after search
+  rpc GetRecordById(GetRecordByIdRequest) returns (GetRecordByIdResponse);
+
+  // Updating data after preprocessing or processing, status will be updated automatically
+  rpc UpdateRecordById(UpdateRecordByIdRequest) returns (UpdateRecordByIdResponse);
+  //rpc UpdateRecordBatchById(UpdateRecordBatchByIdRequest) returns (UpdateRecordBatchByIdResponse); not used now
+
+  // Deleting old Records, firstly we should delete this records from all another databases!
+  //rpc DeleteRecordsById(DeleteRecordsByIdRequest) returns (DeleteRecordsByIdResponse); may be useful later
+
+  //   !!!!!FOR TEST ENVIRONMENT ONLY!!!!!! Clearing table 
+  rpc Authentication(AuthenticationRequest) returns (AuthenticationResponse);
+  rpc ClearTable(ClearTableRequest) returns (ClearTableResponse);
+}
+
+/*			'Records' table requests & responses			*/
+
+// Insert data
+message InsertRecordsRequest {
+	repeated Record records = 1;
+}
+message InsertRecordsResponse {
+	repeated Common.CommandStatus status = 1;
+}
+message CsvFileData { //not used now, shoud be used in ImportCsv()
+	string source = 1;
+	string fields_format_regex = 2;
+	FileExchange.FileData file_data = 3;
+}
+
+// Get data
+message GetRecordsByStatusRequest {
+	RecordStatus record_status = 1;
+}
+message GetRecordsByStatusResponse {
+	repeated Record records = 1;
+	Common.CommandStatus status = 2;
+}
+message GetEmbeddingsByStatusRequest {
+	RecordStatus record_status = 1;
+}
+message GetEmbeddingsByStatusResponse {
+	repeated EmbeddingWithId embeddings = 1;
+	Common.CommandStatus status = 2;
+}
+message GetRecordByIdRequest {
+	Common.Id record_id = 1;
+}
+message GetRecordByIdResponse {
+	Record record = 1;
+	Common.CommandStatus status = 2;
+}
+
+// Update data
+message UpdateRecordByIdRequest {
+	Record record = 1;
+}
+message UpdateRecordByIdResponse {
+	Common.CommandStatus status = 1;
+}
+
+// Delete data
+message AuthenticationRequest {}
+message AuthenticationResponse {
+	bytes rsa_public_key = 1;
+}
+message ClearTableRequest {
+	string auth_data = 1;
+}
+message ClearTableResponse {
+	Common.CommandStatus status = 1;
+}
+
+
+// Main data object. Record contains all necessary data for any procedures, may be optimized by server with including only mandatory data objects for each client
+// may be replaced with table-record structured message to optimize resources
+message Record {
+	Common.Id record_id = 1;
+	RecordStatus status = 2;
+	string article = 3;
+	string category = 4;
+	string subcategory = 5;
+	string image_url = 6;
+	string tags = 7;
+	Common.Embedding image_embedding = 8;
+	string norm = 9;
+	string metadata = 10; 
+	string source = 11;
+	Common.Id main_record_id = 12; // reference to main record of current thing
+	string same_goods = 13; //json with id list of other records of current thing
+	Gender gender = 14;
+	string price = 15;
+	string brand = 16;
+
+	reserved "NormalizedImage", "Added", "Updated", "LastErrorMessage";
+}
+message EmbeddingWithId {
+	Common.Id id = 1;
+	Common.Embedding embedding = 2;
+}
+
+// Describes set of possible values for Record status
+enum RecordStatus {
+	NEW = 0;		// new raw data, without any embeddings or other unprepared fields
+	PROCESSING = 1; // data is in processing now, waiting for update embeddings or other prepared fields
+	PROCEESSED = 2; // data is ready for using, can be sent to searching database
+	FINISHED = 3;	// data was succesfully sent to searching database, and is using now
+	ERROR = 4;		// something went wrong oin one of the stage of the data life cycle, check the 'LastErrorMessage' field in the 'Records' table, and fix the issue manually 
+	//DELETING = 5; // deleting initiated, in progress, wait for removing from other datasets
+	//DELETED = 6;	// deleting finished, data was removed from other datasets and now may be deleted here
+}
+enum Gender {
+	UNDEFINED = 0;
+	MALE = 1;
+	FRMALE = 2;
+	UNISEX = 3;
+}
+
+
+
+
+/*		'Users' table		*/
+
+service ProcessingDatabaseUsers {
+
+  // Returns user embedding by Key, if requested key is absent then this is a new user, so his Key will be added and the embedding will be generated
+  rpc GetUserEmbeddingByKey(GetUserEmbeddingByKeyRequest) returns (GetUserEmbeddingByKeyResponse);
+
+  // Checking whether the user has seen the record or not
+  // ! Returns "true" ONLY if requested user_id and record_id_list is present, and requested record_id is present in record_id_list !
+  rpc IsRecordViewedByUser(IsRecordViewedByUserRequest) returns (IsRecordViewedByUserResponse);
+
+  // Adds user viewed record to the table, should be executed on the stage of user reaction processing
+  rpc AddViewedRecordToUser(AddViewedRecordToUserRequest) returns (AddViewedRecordToUserResponse);
+
+  // Deleting user data, should be executed when we got a message from backend about user's decision to delete his account
+  rpc DeleteUserById(DeleteUserByIdRequest) returns (DeleteUserByIdResponse);
+}
+
+/*			'Users' table requests & responses			*/
+
+// Getting embedding for searching similar records
+message GetUserEmbeddingByKeyRequest {
+	UserEmbeddingKey key = 1;
+}
+message GetUserEmbeddingByKeyResponse {
+	Common.Embedding embedding = 1;
+	Common.CommandStatus status = 2;
+}
+
+// Checking for viewed records to avoid repeatings in user experience
+message IsRecordViewedByUserRequest {
+	Common.Id user_id = 1;
+	Common.Id record_id = 2;
+}
+message IsRecordViewedByUserResponse {
+	bool is_record_viewed = 1;
+	Common.CommandStatus status = 2;
+}
+
+// Updating user viewed records list
+message AddViewedRecordToUserRequest {
+	Common.Id user_id = 1;
+	Common.Id record_id = 2;
+}
+message AddViewedRecordToUserResponse {
+	Common.CommandStatus status = 1;
+}
+
+// Deleting ex-user's data
+message DeleteUserByIdRequest {
+	Common.Id user_id = 1;
+}
+message DeleteUserByIdResponse {
+	Common.CommandStatus status = 1;
+}
+
+// User embedding data structure
+message UserEmbedding {
+	UserEmbeddingKey key = 1;
+	Common.Embedding embedding = 2;
+}
+message UserEmbeddingKey {
+	Common.Id user_id = 1;
+	string category = 2;
+}
+
+// Viewed records data structure
+message ViewedRecords {
+	Common.Id user_id = 1;
+	Common.IdList record_id_list = 2;
+}

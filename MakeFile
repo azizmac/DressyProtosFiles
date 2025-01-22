@@ -1,0 +1,19 @@
+CSHARP_DIR=Gen/CSharp
+PLUGIN_PATH=/opt/homebrew/bin/grpc_csharp_plugin
+
+proto-gen-csharp:
+	@if ! [ -d $(CSHARP_DIR) ]; then \
+		mkdir -p $(CSHARP_DIR); \
+	fi
+	protoc -I Protos \
+		Protos/Common/common.proto \
+		Protos/FileExchange/fileexchange.proto \
+		Protos/Logger/logger.proto \
+		Protos/ProccesingDatabase/processingdatabase.proto \
+		Protos/Recommendation/recommendation.proto \
+		Protos/Search/search.proto \
+		--csharp_out=$(CSHARP_DIR) \
+		--grpc_out=$(CSHARP_DIR) \
+		--plugin=protoc-gen-grpc=$(PLUGIN_PATH) \
+		--csharp_opt=base_namespace \
+		--grpc_opt=base_namespace
