@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package Dressy.FileExchange;
+
+service FileExchange {
+	rpc Upload(stream FileData) returns (UploadStatus);
+}
+
+message FileData {
+	string file_name = 1;
+	bytes chunk_data = 2;
+}
+
+enum UploadStatusCode {
+	OK = 0;
+	FAILED = 1;
+}
+
+message UploadStatus {
+	string message = 1;
+	UploadStatusCode code = 2;
+}
