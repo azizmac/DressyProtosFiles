@@ -15,7 +15,7 @@ message UUID {
 }
 
 message RecommendationRequest {
-  uint64 client_id = 1;
+  UUID client_id = 1;
   int32 count = 2;
 }
 
@@ -28,7 +28,7 @@ message ClientEmbeddingStringRequest {
 }
 
 message ClientEmbeddings {
-  uint64 userId = 1;
+  UUID userId = 1;
   UUID productId = 2;
   bool isLiked = 3;
 }

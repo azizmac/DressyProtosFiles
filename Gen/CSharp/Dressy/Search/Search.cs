@@ -24,13 +24,14 @@ namespace Dressy.Search {
     static SearchReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNTZWFyY2gvc2VhcmNoLnByb3RvEg1EcmVzc3kuU2VhcmNoIjkKFVJlY29t",
-            "bWVuZGF0aW9uUmVxdWVzdBIRCgljbGllbnRfaWQYASABKAQSDQoFY291bnQY",
-            "AiABKAUiRwoWUmVjb21tZW5kYXRpb25SZXNwb25zZRItChByZXF1ZXN0VmVj",
-            "dG9yX2lkGAEgAygLMhMuRHJlc3N5LlNlYXJjaC5VVUlEIhUKBFVVSUQSDQoF",
-            "dmFsdWUYASABKAkyawoGU2VhcmNoEmEKEkdldFJlY29tbWVuZGF0aW9ucxIk",
-            "LkRyZXNzeS5TZWFyY2guUmVjb21tZW5kYXRpb25SZXF1ZXN0GiUuRHJlc3N5",
-            "LlNlYXJjaC5SZWNvbW1lbmRhdGlvblJlc3BvbnNlYgZwcm90bzM="));
+            "ChNTZWFyY2gvc2VhcmNoLnByb3RvEg1EcmVzc3kuU2VhcmNoIk4KFVJlY29t",
+            "bWVuZGF0aW9uUmVxdWVzdBImCgljbGllbnRfaWQYASABKAsyEy5EcmVzc3ku",
+            "U2VhcmNoLlVVSUQSDQoFY291bnQYAiABKAUiRwoWUmVjb21tZW5kYXRpb25S",
+            "ZXNwb25zZRItChByZXF1ZXN0VmVjdG9yX2lkGAEgAygLMhMuRHJlc3N5LlNl",
+            "YXJjaC5VVUlEIhUKBFVVSUQSDQoFdmFsdWUYASABKAkyawoGU2VhcmNoEmEK",
+            "EkdldFJlY29tbWVuZGF0aW9ucxIkLkRyZXNzeS5TZWFyY2guUmVjb21tZW5k",
+            "YXRpb25SZXF1ZXN0GiUuRHJlc3N5LlNlYXJjaC5SZWNvbW1lbmRhdGlvblJl",
+            "c3BvbnNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -78,7 +79,7 @@ namespace Dressy.Search {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecommendationRequest(RecommendationRequest other) : this() {
-      clientId_ = other.clientId_;
+      clientId_ = other.clientId_ != null ? other.clientId_.Clone() : null;
       count_ = other.count_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -91,10 +92,10 @@ namespace Dressy.Search {
 
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 1;
-    private ulong clientId_;
+    private global::Dressy.Search.UUID clientId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong ClientId {
+    public global::Dressy.Search.UUID ClientId {
       get { return clientId_; }
       set {
         clientId_ = value;
@@ -128,7 +129,7 @@ namespace Dressy.Search {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ClientId != other.ClientId) return false;
+      if (!object.Equals(ClientId, other.ClientId)) return false;
       if (Count != other.Count) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -137,7 +138,7 @@ namespace Dressy.Search {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (ClientId != 0UL) hash ^= ClientId.GetHashCode();
+      if (clientId_ != null) hash ^= ClientId.GetHashCode();
       if (Count != 0) hash ^= Count.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -157,9 +158,9 @@ namespace Dressy.Search {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ClientId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(ClientId);
+      if (clientId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ClientId);
       }
       if (Count != 0) {
         output.WriteRawTag(16);
@@ -175,9 +176,9 @@ namespace Dressy.Search {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ClientId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(ClientId);
+      if (clientId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ClientId);
       }
       if (Count != 0) {
         output.WriteRawTag(16);
@@ -193,8 +194,8 @@ namespace Dressy.Search {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (ClientId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ClientId);
+      if (clientId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientId);
       }
       if (Count != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Count);
@@ -211,8 +212,11 @@ namespace Dressy.Search {
       if (other == null) {
         return;
       }
-      if (other.ClientId != 0UL) {
-        ClientId = other.ClientId;
+      if (other.clientId_ != null) {
+        if (clientId_ == null) {
+          ClientId = new global::Dressy.Search.UUID();
+        }
+        ClientId.MergeFrom(other.ClientId);
       }
       if (other.Count != 0) {
         Count = other.Count;
@@ -236,8 +240,11 @@ namespace Dressy.Search {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ClientId = input.ReadUInt64();
+          case 10: {
+            if (clientId_ == null) {
+              ClientId = new global::Dressy.Search.UUID();
+            }
+            input.ReadMessage(ClientId);
             break;
           }
           case 16: {
@@ -263,8 +270,11 @@ namespace Dressy.Search {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            ClientId = input.ReadUInt64();
+          case 10: {
+            if (clientId_ == null) {
+              ClientId = new global::Dressy.Search.UUID();
+            }
+            input.ReadMessage(ClientId);
             break;
           }
           case 16: {

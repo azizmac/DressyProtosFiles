@@ -25,28 +25,29 @@ namespace Dressy.Recommendation {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNSZWNvbW1lbmRhdGlvbi9yZWNvbW1lbmRhdGlvbi5wcm90bxIVRHJlc3N5",
-            "LlJlY29tbWVuZGF0aW9uIhUKBFVVSUQSDQoFdmFsdWUYASABKAkiOQoVUmVj",
-            "b21tZW5kYXRpb25SZXF1ZXN0EhEKCWNsaWVudF9pZBgBIAEoBBINCgVjb3Vu",
-            "dBgCIAEoBSJPChZSZWNvbW1lbmRhdGlvblJlc3BvbnNlEjUKEHJlcXVlc3RW",
-            "ZWN0b3JfaWQYASADKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24uVVVJRCI1",
-            "ChxDbGllbnRFbWJlZGRpbmdTdHJpbmdSZXF1ZXN0EhUKDXJlcXVlc3RWZWN0",
-            "b3IYASADKAkiYwoQQ2xpZW50RW1iZWRkaW5ncxIOCgZ1c2VySWQYASABKAQS",
-            "LgoJcHJvZHVjdElkGAIgASgLMhsuRHJlc3N5LlJlY29tbWVuZGF0aW9uLlVV",
-            "SUQSDwoHaXNMaWtlZBgDIAEoCCIsChdDbGllbnRFbWJlZGRpbmdSZXNwb25z",
-            "ZRIRCglpc191cGRhdGUYASABKAgiNAobQ2xpZW50RW1iZWRkaW5nRmxvYXRS",
-            "ZXF1ZXN0EhUKDXJlcXVlc3RWZWN0b3IYASADKAIyjwQKDlJlY29tbWVuZGF0",
-            "aW9uEnYKF0dldFJlY29tbWVuZGF0aW9uc0NhcmRzEiwuRHJlc3N5LlJlY29t",
-            "bWVuZGF0aW9uLlJlY29tbWVuZGF0aW9uUmVxdWVzdBotLkRyZXNzeS5SZWNv",
-            "bW1lbmRhdGlvbi5SZWNvbW1lbmRhdGlvblJlc3BvbnNlEogBCiFVcGRhdGVD",
-            "bGllbnRFbWJlZGRpbmdTdHJpbmdWZWN0b3ISMy5EcmVzc3kuUmVjb21tZW5k",
-            "YXRpb24uQ2xpZW50RW1iZWRkaW5nU3RyaW5nUmVxdWVzdBouLkRyZXNzeS5S",
-            "ZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdSZXNwb25zZRKGAQogVXBk",
-            "YXRlQ2xpZW50RW1iZWRkaW5nRmxvYXRWZWN0b3ISMi5EcmVzc3kuUmVjb21t",
-            "ZW5kYXRpb24uQ2xpZW50RW1iZWRkaW5nRmxvYXRSZXF1ZXN0Gi4uRHJlc3N5",
-            "LlJlY29tbWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jlc3BvbnNlEnEKFlVw",
-            "ZGF0ZUNsaWVudEVtYmVkZGluZ3MSJy5EcmVzc3kuUmVjb21tZW5kYXRpb24u",
-            "Q2xpZW50RW1iZWRkaW5ncxouLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGll",
-            "bnRFbWJlZGRpbmdSZXNwb25zZWIGcHJvdG8z"));
+            "LlJlY29tbWVuZGF0aW9uIhUKBFVVSUQSDQoFdmFsdWUYASABKAkiVgoVUmVj",
+            "b21tZW5kYXRpb25SZXF1ZXN0Ei4KCWNsaWVudF9pZBgBIAEoCzIbLkRyZXNz",
+            "eS5SZWNvbW1lbmRhdGlvbi5VVUlEEg0KBWNvdW50GAIgASgFIk8KFlJlY29t",
+            "bWVuZGF0aW9uUmVzcG9uc2USNQoQcmVxdWVzdFZlY3Rvcl9pZBgBIAMoCzIb",
+            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIjUKHENsaWVudEVtYmVkZGlu",
+            "Z1N0cmluZ1JlcXVlc3QSFQoNcmVxdWVzdFZlY3RvchgBIAMoCSKAAQoQQ2xp",
+            "ZW50RW1iZWRkaW5ncxIrCgZ1c2VySWQYASABKAsyGy5EcmVzc3kuUmVjb21t",
+            "ZW5kYXRpb24uVVVJRBIuCglwcm9kdWN0SWQYAiABKAsyGy5EcmVzc3kuUmVj",
+            "b21tZW5kYXRpb24uVVVJRBIPCgdpc0xpa2VkGAMgASgIIiwKF0NsaWVudEVt",
+            "YmVkZGluZ1Jlc3BvbnNlEhEKCWlzX3VwZGF0ZRgBIAEoCCI0ChtDbGllbnRF",
+            "bWJlZGRpbmdGbG9hdFJlcXVlc3QSFQoNcmVxdWVzdFZlY3RvchgBIAMoAjKP",
+            "BAoOUmVjb21tZW5kYXRpb24SdgoXR2V0UmVjb21tZW5kYXRpb25zQ2FyZHMS",
+            "LC5EcmVzc3kuUmVjb21tZW5kYXRpb24uUmVjb21tZW5kYXRpb25SZXF1ZXN0",
+            "Gi0uRHJlc3N5LlJlY29tbWVuZGF0aW9uLlJlY29tbWVuZGF0aW9uUmVzcG9u",
+            "c2USiAEKIVVwZGF0ZUNsaWVudEVtYmVkZGluZ1N0cmluZ1ZlY3RvchIzLkRy",
+            "ZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdTdHJpbmdSZXF1",
+            "ZXN0Gi4uRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jl",
+            "c3BvbnNlEoYBCiBVcGRhdGVDbGllbnRFbWJlZGRpbmdGbG9hdFZlY3RvchIy",
+            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdGbG9hdFJl",
+            "cXVlc3QaLi5EcmVzc3kuUmVjb21tZW5kYXRpb24uQ2xpZW50RW1iZWRkaW5n",
+            "UmVzcG9uc2UScQoWVXBkYXRlQ2xpZW50RW1iZWRkaW5ncxInLkRyZXNzeS5S",
+            "ZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdzGi4uRHJlc3N5LlJlY29t",
+            "bWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jlc3BvbnNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -296,7 +297,7 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecommendationRequest(RecommendationRequest other) : this() {
-      clientId_ = other.clientId_;
+      clientId_ = other.clientId_ != null ? other.clientId_.Clone() : null;
       count_ = other.count_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -309,10 +310,10 @@ namespace Dressy.Recommendation {
 
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 1;
-    private ulong clientId_;
+    private global::Dressy.Recommendation.UUID clientId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong ClientId {
+    public global::Dressy.Recommendation.UUID ClientId {
       get { return clientId_; }
       set {
         clientId_ = value;
@@ -346,7 +347,7 @@ namespace Dressy.Recommendation {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ClientId != other.ClientId) return false;
+      if (!object.Equals(ClientId, other.ClientId)) return false;
       if (Count != other.Count) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -355,7 +356,7 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (ClientId != 0UL) hash ^= ClientId.GetHashCode();
+      if (clientId_ != null) hash ^= ClientId.GetHashCode();
       if (Count != 0) hash ^= Count.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -375,9 +376,9 @@ namespace Dressy.Recommendation {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ClientId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(ClientId);
+      if (clientId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ClientId);
       }
       if (Count != 0) {
         output.WriteRawTag(16);
@@ -393,9 +394,9 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ClientId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(ClientId);
+      if (clientId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ClientId);
       }
       if (Count != 0) {
         output.WriteRawTag(16);
@@ -411,8 +412,8 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (ClientId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ClientId);
+      if (clientId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientId);
       }
       if (Count != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Count);
@@ -429,8 +430,11 @@ namespace Dressy.Recommendation {
       if (other == null) {
         return;
       }
-      if (other.ClientId != 0UL) {
-        ClientId = other.ClientId;
+      if (other.clientId_ != null) {
+        if (clientId_ == null) {
+          ClientId = new global::Dressy.Recommendation.UUID();
+        }
+        ClientId.MergeFrom(other.ClientId);
       }
       if (other.Count != 0) {
         Count = other.Count;
@@ -454,8 +458,11 @@ namespace Dressy.Recommendation {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ClientId = input.ReadUInt64();
+          case 10: {
+            if (clientId_ == null) {
+              ClientId = new global::Dressy.Recommendation.UUID();
+            }
+            input.ReadMessage(ClientId);
             break;
           }
           case 16: {
@@ -481,8 +488,11 @@ namespace Dressy.Recommendation {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            ClientId = input.ReadUInt64();
+          case 10: {
+            if (clientId_ == null) {
+              ClientId = new global::Dressy.Recommendation.UUID();
+            }
+            input.ReadMessage(ClientId);
             break;
           }
           case 16: {
@@ -905,7 +915,7 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientEmbeddings(ClientEmbeddings other) : this() {
-      userId_ = other.userId_;
+      userId_ = other.userId_ != null ? other.userId_.Clone() : null;
       productId_ = other.productId_ != null ? other.productId_.Clone() : null;
       isLiked_ = other.isLiked_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -919,10 +929,10 @@ namespace Dressy.Recommendation {
 
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 1;
-    private ulong userId_;
+    private global::Dressy.Recommendation.UUID userId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong UserId {
+    public global::Dressy.Recommendation.UUID UserId {
       get { return userId_; }
       set {
         userId_ = value;
@@ -968,7 +978,7 @@ namespace Dressy.Recommendation {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (UserId != other.UserId) return false;
+      if (!object.Equals(UserId, other.UserId)) return false;
       if (!object.Equals(ProductId, other.ProductId)) return false;
       if (IsLiked != other.IsLiked) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -978,7 +988,7 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId != 0UL) hash ^= UserId.GetHashCode();
+      if (userId_ != null) hash ^= UserId.GetHashCode();
       if (productId_ != null) hash ^= ProductId.GetHashCode();
       if (IsLiked != false) hash ^= IsLiked.GetHashCode();
       if (_unknownFields != null) {
@@ -999,9 +1009,9 @@ namespace Dressy.Recommendation {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(UserId);
+      if (userId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UserId);
       }
       if (productId_ != null) {
         output.WriteRawTag(18);
@@ -1021,9 +1031,9 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(UserId);
+      if (userId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UserId);
       }
       if (productId_ != null) {
         output.WriteRawTag(18);
@@ -1043,8 +1053,8 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(UserId);
+      if (userId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserId);
       }
       if (productId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductId);
@@ -1064,8 +1074,11 @@ namespace Dressy.Recommendation {
       if (other == null) {
         return;
       }
-      if (other.UserId != 0UL) {
-        UserId = other.UserId;
+      if (other.userId_ != null) {
+        if (userId_ == null) {
+          UserId = new global::Dressy.Recommendation.UUID();
+        }
+        UserId.MergeFrom(other.UserId);
       }
       if (other.productId_ != null) {
         if (productId_ == null) {
@@ -1095,8 +1108,11 @@ namespace Dressy.Recommendation {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            UserId = input.ReadUInt64();
+          case 10: {
+            if (userId_ == null) {
+              UserId = new global::Dressy.Recommendation.UUID();
+            }
+            input.ReadMessage(UserId);
             break;
           }
           case 18: {
@@ -1129,8 +1145,11 @@ namespace Dressy.Recommendation {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            UserId = input.ReadUInt64();
+          case 10: {
+            if (userId_ == null) {
+              UserId = new global::Dressy.Recommendation.UUID();
+            }
+            input.ReadMessage(UserId);
             break;
           }
           case 18: {
