@@ -50,13 +50,9 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Dressy.Recommendation.RecommendationResponse> __Marshaller_Dressy_Recommendation_RecommendationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Recommendation.RecommendationResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Dressy.Recommendation.ClientEmbeddingStringRequest> __Marshaller_Dressy_Recommendation_ClientEmbeddingStringRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Recommendation.ClientEmbeddingStringRequest.Parser));
+    static readonly grpc::Marshaller<global::Dressy.Recommendation.ClientsEmbeddings> __Marshaller_Dressy_Recommendation_ClientsEmbeddings = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Recommendation.ClientsEmbeddings.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Dressy.Recommendation.ClientEmbeddingResponse> __Marshaller_Dressy_Recommendation_ClientEmbeddingResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Recommendation.ClientEmbeddingResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Dressy.Recommendation.ClientEmbeddingFloatRequest> __Marshaller_Dressy_Recommendation_ClientEmbeddingFloatRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Recommendation.ClientEmbeddingFloatRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Dressy.Recommendation.ClientEmbeddings> __Marshaller_Dressy_Recommendation_ClientEmbeddings = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Recommendation.ClientEmbeddings.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Dressy.Recommendation.RecommendationRequest, global::Dressy.Recommendation.RecommendationResponse> __Method_GetRecommendationsCards = new grpc::Method<global::Dressy.Recommendation.RecommendationRequest, global::Dressy.Recommendation.RecommendationResponse>(
@@ -67,27 +63,11 @@ namespace Dressy.Recommendation {
         __Marshaller_Dressy_Recommendation_RecommendationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Dressy.Recommendation.ClientEmbeddingStringRequest, global::Dressy.Recommendation.ClientEmbeddingResponse> __Method_UpdateClientEmbeddingStringVector = new grpc::Method<global::Dressy.Recommendation.ClientEmbeddingStringRequest, global::Dressy.Recommendation.ClientEmbeddingResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateClientEmbeddingStringVector",
-        __Marshaller_Dressy_Recommendation_ClientEmbeddingStringRequest,
-        __Marshaller_Dressy_Recommendation_ClientEmbeddingResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Dressy.Recommendation.ClientEmbeddingFloatRequest, global::Dressy.Recommendation.ClientEmbeddingResponse> __Method_UpdateClientEmbeddingFloatVector = new grpc::Method<global::Dressy.Recommendation.ClientEmbeddingFloatRequest, global::Dressy.Recommendation.ClientEmbeddingResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateClientEmbeddingFloatVector",
-        __Marshaller_Dressy_Recommendation_ClientEmbeddingFloatRequest,
-        __Marshaller_Dressy_Recommendation_ClientEmbeddingResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Dressy.Recommendation.ClientEmbeddings, global::Dressy.Recommendation.ClientEmbeddingResponse> __Method_UpdateClientEmbeddings = new grpc::Method<global::Dressy.Recommendation.ClientEmbeddings, global::Dressy.Recommendation.ClientEmbeddingResponse>(
+    static readonly grpc::Method<global::Dressy.Recommendation.ClientsEmbeddings, global::Dressy.Recommendation.ClientEmbeddingResponse> __Method_UpdateClientEmbeddings = new grpc::Method<global::Dressy.Recommendation.ClientsEmbeddings, global::Dressy.Recommendation.ClientEmbeddingResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateClientEmbeddings",
-        __Marshaller_Dressy_Recommendation_ClientEmbeddings,
+        __Marshaller_Dressy_Recommendation_ClientsEmbeddings,
         __Marshaller_Dressy_Recommendation_ClientEmbeddingResponse);
 
     /// <summary>Service descriptor</summary>
@@ -107,19 +87,7 @@ namespace Dressy.Recommendation {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingStringVector(global::Dressy.Recommendation.ClientEmbeddingStringRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingFloatVector(global::Dressy.Recommendation.ClientEmbeddingFloatRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddings(global::Dressy.Recommendation.ClientEmbeddings request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddings(global::Dressy.Recommendation.ClientsEmbeddings request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -174,62 +142,22 @@ namespace Dressy.Recommendation {
         return CallInvoker.AsyncUnaryCall(__Method_GetRecommendationsCards, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddingStringVector(global::Dressy.Recommendation.ClientEmbeddingStringRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateClientEmbeddingStringVector(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddingStringVector(global::Dressy.Recommendation.ClientEmbeddingStringRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateClientEmbeddingStringVector, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingStringVectorAsync(global::Dressy.Recommendation.ClientEmbeddingStringRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateClientEmbeddingStringVectorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingStringVectorAsync(global::Dressy.Recommendation.ClientEmbeddingStringRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateClientEmbeddingStringVector, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddingFloatVector(global::Dressy.Recommendation.ClientEmbeddingFloatRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateClientEmbeddingFloatVector(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddingFloatVector(global::Dressy.Recommendation.ClientEmbeddingFloatRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateClientEmbeddingFloatVector, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingFloatVectorAsync(global::Dressy.Recommendation.ClientEmbeddingFloatRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateClientEmbeddingFloatVectorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingFloatVectorAsync(global::Dressy.Recommendation.ClientEmbeddingFloatRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateClientEmbeddingFloatVector, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddings(global::Dressy.Recommendation.ClientEmbeddings request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddings(global::Dressy.Recommendation.ClientsEmbeddings request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateClientEmbeddings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddings(global::Dressy.Recommendation.ClientEmbeddings request, grpc::CallOptions options)
+      public virtual global::Dressy.Recommendation.ClientEmbeddingResponse UpdateClientEmbeddings(global::Dressy.Recommendation.ClientsEmbeddings request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateClientEmbeddings, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingsAsync(global::Dressy.Recommendation.ClientEmbeddings request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingsAsync(global::Dressy.Recommendation.ClientsEmbeddings request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateClientEmbeddingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingsAsync(global::Dressy.Recommendation.ClientEmbeddings request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Dressy.Recommendation.ClientEmbeddingResponse> UpdateClientEmbeddingsAsync(global::Dressy.Recommendation.ClientsEmbeddings request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateClientEmbeddings, null, options, request);
       }
@@ -248,8 +176,6 @@ namespace Dressy.Recommendation {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetRecommendationsCards, serviceImpl.GetRecommendationsCards)
-          .AddMethod(__Method_UpdateClientEmbeddingStringVector, serviceImpl.UpdateClientEmbeddingStringVector)
-          .AddMethod(__Method_UpdateClientEmbeddingFloatVector, serviceImpl.UpdateClientEmbeddingFloatVector)
           .AddMethod(__Method_UpdateClientEmbeddings, serviceImpl.UpdateClientEmbeddings).Build();
     }
 
@@ -261,9 +187,7 @@ namespace Dressy.Recommendation {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RecommendationBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetRecommendationsCards, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Recommendation.RecommendationRequest, global::Dressy.Recommendation.RecommendationResponse>(serviceImpl.GetRecommendationsCards));
-      serviceBinder.AddMethod(__Method_UpdateClientEmbeddingStringVector, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Recommendation.ClientEmbeddingStringRequest, global::Dressy.Recommendation.ClientEmbeddingResponse>(serviceImpl.UpdateClientEmbeddingStringVector));
-      serviceBinder.AddMethod(__Method_UpdateClientEmbeddingFloatVector, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Recommendation.ClientEmbeddingFloatRequest, global::Dressy.Recommendation.ClientEmbeddingResponse>(serviceImpl.UpdateClientEmbeddingFloatVector));
-      serviceBinder.AddMethod(__Method_UpdateClientEmbeddings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Recommendation.ClientEmbeddings, global::Dressy.Recommendation.ClientEmbeddingResponse>(serviceImpl.UpdateClientEmbeddings));
+      serviceBinder.AddMethod(__Method_UpdateClientEmbeddings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Recommendation.ClientsEmbeddings, global::Dressy.Recommendation.ClientEmbeddingResponse>(serviceImpl.UpdateClientEmbeddings));
     }
 
   }

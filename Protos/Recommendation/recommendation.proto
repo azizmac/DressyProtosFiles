@@ -5,9 +5,7 @@ package Dressy.Recommendation;
 service Recommendation {
 
   rpc GetRecommendationsCards (RecommendationRequest) returns (RecommendationResponse);
-  rpc UpdateClientEmbeddingStringVector (ClientEmbeddingStringRequest) returns (ClientEmbeddingResponse);
-  rpc UpdateClientEmbeddingFloatVector (ClientEmbeddingFloatRequest) returns (ClientEmbeddingResponse);
-  rpc UpdateClientEmbeddings (ClientEmbeddings) returns (ClientEmbeddingResponse);
+  rpc UpdateClientEmbeddings (ClientsEmbeddings) returns (ClientEmbeddingResponse);
 }
 
 message UUID {
@@ -23,19 +21,16 @@ message RecommendationResponse {
   repeated UUID requestVector_id = 1;
 }
 
-message ClientEmbeddingStringRequest {
-  repeated string requestVector = 1;
+message ClientEmbedding {
+  UUID productId = 1;
+  bool isLiked = 2;
 }
 
-message ClientEmbeddings {
+message ClientsEmbeddings {
   UUID userId = 1;
-  UUID productId = 2;
-  bool isLiked = 3;
+  repeated ClientEmbedding clientsEmbenddings = 2;
 }
 
 message ClientEmbeddingResponse{
   bool is_update = 1;
-}
-message ClientEmbeddingFloatRequest {
-  repeated float requestVector = 1;
 }

@@ -29,35 +29,28 @@ namespace Dressy.Recommendation {
             "b21tZW5kYXRpb25SZXF1ZXN0Ei4KCWNsaWVudF9pZBgBIAEoCzIbLkRyZXNz",
             "eS5SZWNvbW1lbmRhdGlvbi5VVUlEEg0KBWNvdW50GAIgASgFIk8KFlJlY29t",
             "bWVuZGF0aW9uUmVzcG9uc2USNQoQcmVxdWVzdFZlY3Rvcl9pZBgBIAMoCzIb",
-            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIjUKHENsaWVudEVtYmVkZGlu",
-            "Z1N0cmluZ1JlcXVlc3QSFQoNcmVxdWVzdFZlY3RvchgBIAMoCSKAAQoQQ2xp",
-            "ZW50RW1iZWRkaW5ncxIrCgZ1c2VySWQYASABKAsyGy5EcmVzc3kuUmVjb21t",
-            "ZW5kYXRpb24uVVVJRBIuCglwcm9kdWN0SWQYAiABKAsyGy5EcmVzc3kuUmVj",
-            "b21tZW5kYXRpb24uVVVJRBIPCgdpc0xpa2VkGAMgASgIIiwKF0NsaWVudEVt",
-            "YmVkZGluZ1Jlc3BvbnNlEhEKCWlzX3VwZGF0ZRgBIAEoCCI0ChtDbGllbnRF",
-            "bWJlZGRpbmdGbG9hdFJlcXVlc3QSFQoNcmVxdWVzdFZlY3RvchgBIAMoAjKP",
-            "BAoOUmVjb21tZW5kYXRpb24SdgoXR2V0UmVjb21tZW5kYXRpb25zQ2FyZHMS",
-            "LC5EcmVzc3kuUmVjb21tZW5kYXRpb24uUmVjb21tZW5kYXRpb25SZXF1ZXN0",
-            "Gi0uRHJlc3N5LlJlY29tbWVuZGF0aW9uLlJlY29tbWVuZGF0aW9uUmVzcG9u",
-            "c2USiAEKIVVwZGF0ZUNsaWVudEVtYmVkZGluZ1N0cmluZ1ZlY3RvchIzLkRy",
-            "ZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdTdHJpbmdSZXF1",
-            "ZXN0Gi4uRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jl",
-            "c3BvbnNlEoYBCiBVcGRhdGVDbGllbnRFbWJlZGRpbmdGbG9hdFZlY3RvchIy",
-            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdGbG9hdFJl",
-            "cXVlc3QaLi5EcmVzc3kuUmVjb21tZW5kYXRpb24uQ2xpZW50RW1iZWRkaW5n",
-            "UmVzcG9uc2UScQoWVXBkYXRlQ2xpZW50RW1iZWRkaW5ncxInLkRyZXNzeS5S",
-            "ZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdzGi4uRHJlc3N5LlJlY29t",
-            "bWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jlc3BvbnNlYgZwcm90bzM="));
+            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIlIKD0NsaWVudEVtYmVkZGlu",
+            "ZxIuCglwcm9kdWN0SWQYASABKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24u",
+            "VVVJRBIPCgdpc0xpa2VkGAIgASgIIoQBChFDbGllbnRzRW1iZWRkaW5ncxIr",
+            "CgZ1c2VySWQYASABKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24uVVVJRBJC",
+            "ChJjbGllbnRzRW1iZW5kZGluZ3MYAiADKAsyJi5EcmVzc3kuUmVjb21tZW5k",
+            "YXRpb24uQ2xpZW50RW1iZWRkaW5nIiwKF0NsaWVudEVtYmVkZGluZ1Jlc3Bv",
+            "bnNlEhEKCWlzX3VwZGF0ZRgBIAEoCDL8AQoOUmVjb21tZW5kYXRpb24SdgoX",
+            "R2V0UmVjb21tZW5kYXRpb25zQ2FyZHMSLC5EcmVzc3kuUmVjb21tZW5kYXRp",
+            "b24uUmVjb21tZW5kYXRpb25SZXF1ZXN0Gi0uRHJlc3N5LlJlY29tbWVuZGF0",
+            "aW9uLlJlY29tbWVuZGF0aW9uUmVzcG9uc2UScgoWVXBkYXRlQ2xpZW50RW1i",
+            "ZWRkaW5ncxIoLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRzRW1iZWRk",
+            "aW5ncxouLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdS",
+            "ZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.UUID), global::Dressy.Recommendation.UUID.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationRequest), global::Dressy.Recommendation.RecommendationRequest.Parser, new[]{ "ClientId", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationResponse), global::Dressy.Recommendation.RecommendationResponse.Parser, new[]{ "RequestVectorId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingStringRequest), global::Dressy.Recommendation.ClientEmbeddingStringRequest.Parser, new[]{ "RequestVector" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddings), global::Dressy.Recommendation.ClientEmbeddings.Parser, new[]{ "UserId", "ProductId", "IsLiked" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingResponse), global::Dressy.Recommendation.ClientEmbeddingResponse.Parser, new[]{ "IsUpdate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingFloatRequest), global::Dressy.Recommendation.ClientEmbeddingFloatRequest.Parser, new[]{ "RequestVector" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbedding), global::Dressy.Recommendation.ClientEmbedding.Parser, new[]{ "ProductId", "IsLiked" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientsEmbeddings), global::Dressy.Recommendation.ClientsEmbeddings.Parser, new[]{ "UserId", "ClientsEmbenddings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingResponse), global::Dressy.Recommendation.ClientEmbeddingResponse.Parser, new[]{ "IsUpdate" }, null, null, null, null)
           }));
     }
     #endregion
@@ -694,16 +687,16 @@ namespace Dressy.Recommendation {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ClientEmbeddingStringRequest : pb::IMessage<ClientEmbeddingStringRequest>
+  public sealed partial class ClientEmbedding : pb::IMessage<ClientEmbedding>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ClientEmbeddingStringRequest> _parser = new pb::MessageParser<ClientEmbeddingStringRequest>(() => new ClientEmbeddingStringRequest());
+    private static readonly pb::MessageParser<ClientEmbedding> _parser = new pb::MessageParser<ClientEmbedding>(() => new ClientEmbedding());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ClientEmbeddingStringRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<ClientEmbedding> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -719,7 +712,7 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddingStringRequest() {
+    public ClientEmbedding() {
       OnConstruction();
     }
 
@@ -727,195 +720,7 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddingStringRequest(ClientEmbeddingStringRequest other) : this() {
-      requestVector_ = other.requestVector_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddingStringRequest Clone() {
-      return new ClientEmbeddingStringRequest(this);
-    }
-
-    /// <summary>Field number for the "requestVector" field.</summary>
-    public const int RequestVectorFieldNumber = 1;
-    private static readonly pb::FieldCodec<string> _repeated_requestVector_codec
-        = pb::FieldCodec.ForString(10);
-    private readonly pbc::RepeatedField<string> requestVector_ = new pbc::RepeatedField<string>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> RequestVector {
-      get { return requestVector_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as ClientEmbeddingStringRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ClientEmbeddingStringRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!requestVector_.Equals(other.requestVector_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= requestVector_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      requestVector_.WriteTo(output, _repeated_requestVector_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      requestVector_.WriteTo(ref output, _repeated_requestVector_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += requestVector_.CalculateSize(_repeated_requestVector_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ClientEmbeddingStringRequest other) {
-      if (other == null) {
-        return;
-      }
-      requestVector_.Add(other.requestVector_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            requestVector_.AddEntriesFrom(input, _repeated_requestVector_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            requestVector_.AddEntriesFrom(ref input, _repeated_requestVector_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ClientEmbeddings : pb::IMessage<ClientEmbeddings>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<ClientEmbeddings> _parser = new pb::MessageParser<ClientEmbeddings>(() => new ClientEmbeddings());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ClientEmbeddings> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dressy.Recommendation.RecommendationReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddings() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddings(ClientEmbeddings other) : this() {
-      userId_ = other.userId_ != null ? other.userId_.Clone() : null;
+    public ClientEmbedding(ClientEmbedding other) : this() {
       productId_ = other.productId_ != null ? other.productId_.Clone() : null;
       isLiked_ = other.isLiked_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -923,24 +728,12 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddings Clone() {
-      return new ClientEmbeddings(this);
-    }
-
-    /// <summary>Field number for the "userId" field.</summary>
-    public const int UserIdFieldNumber = 1;
-    private global::Dressy.Recommendation.UUID userId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Dressy.Recommendation.UUID UserId {
-      get { return userId_; }
-      set {
-        userId_ = value;
-      }
+    public ClientEmbedding Clone() {
+      return new ClientEmbedding(this);
     }
 
     /// <summary>Field number for the "productId" field.</summary>
-    public const int ProductIdFieldNumber = 2;
+    public const int ProductIdFieldNumber = 1;
     private global::Dressy.Recommendation.UUID productId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -952,7 +745,7 @@ namespace Dressy.Recommendation {
     }
 
     /// <summary>Field number for the "isLiked" field.</summary>
-    public const int IsLikedFieldNumber = 3;
+    public const int IsLikedFieldNumber = 2;
     private bool isLiked_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -966,19 +759,18 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ClientEmbeddings);
+      return Equals(other as ClientEmbedding);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ClientEmbeddings other) {
+    public bool Equals(ClientEmbedding other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(UserId, other.UserId)) return false;
       if (!object.Equals(ProductId, other.ProductId)) return false;
       if (IsLiked != other.IsLiked) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -988,7 +780,6 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (userId_ != null) hash ^= UserId.GetHashCode();
       if (productId_ != null) hash ^= ProductId.GetHashCode();
       if (IsLiked != false) hash ^= IsLiked.GetHashCode();
       if (_unknownFields != null) {
@@ -1009,16 +800,12 @@ namespace Dressy.Recommendation {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (userId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(UserId);
-      }
       if (productId_ != null) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteMessage(ProductId);
       }
       if (IsLiked != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteBool(IsLiked);
       }
       if (_unknownFields != null) {
@@ -1031,16 +818,12 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (userId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(UserId);
-      }
       if (productId_ != null) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteMessage(ProductId);
       }
       if (IsLiked != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteBool(IsLiked);
       }
       if (_unknownFields != null) {
@@ -1053,9 +836,6 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (userId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserId);
-      }
       if (productId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductId);
       }
@@ -1070,15 +850,9 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ClientEmbeddings other) {
+    public void MergeFrom(ClientEmbedding other) {
       if (other == null) {
         return;
-      }
-      if (other.userId_ != null) {
-        if (userId_ == null) {
-          UserId = new global::Dressy.Recommendation.UUID();
-        }
-        UserId.MergeFrom(other.UserId);
       }
       if (other.productId_ != null) {
         if (productId_ == null) {
@@ -1109,6 +883,239 @@ namespace Dressy.Recommendation {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            if (productId_ == null) {
+              ProductId = new global::Dressy.Recommendation.UUID();
+            }
+            input.ReadMessage(ProductId);
+            break;
+          }
+          case 16: {
+            IsLiked = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (productId_ == null) {
+              ProductId = new global::Dressy.Recommendation.UUID();
+            }
+            input.ReadMessage(ProductId);
+            break;
+          }
+          case 16: {
+            IsLiked = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClientsEmbeddings : pb::IMessage<ClientsEmbeddings>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ClientsEmbeddings> _parser = new pb::MessageParser<ClientsEmbeddings>(() => new ClientsEmbeddings());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ClientsEmbeddings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Dressy.Recommendation.RecommendationReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ClientsEmbeddings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ClientsEmbeddings(ClientsEmbeddings other) : this() {
+      userId_ = other.userId_ != null ? other.userId_.Clone() : null;
+      clientsEmbenddings_ = other.clientsEmbenddings_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ClientsEmbeddings Clone() {
+      return new ClientsEmbeddings(this);
+    }
+
+    /// <summary>Field number for the "userId" field.</summary>
+    public const int UserIdFieldNumber = 1;
+    private global::Dressy.Recommendation.UUID userId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Dressy.Recommendation.UUID UserId {
+      get { return userId_; }
+      set {
+        userId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "clientsEmbenddings" field.</summary>
+    public const int ClientsEmbenddingsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Dressy.Recommendation.ClientEmbedding> _repeated_clientsEmbenddings_codec
+        = pb::FieldCodec.ForMessage(18, global::Dressy.Recommendation.ClientEmbedding.Parser);
+    private readonly pbc::RepeatedField<global::Dressy.Recommendation.ClientEmbedding> clientsEmbenddings_ = new pbc::RepeatedField<global::Dressy.Recommendation.ClientEmbedding>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Dressy.Recommendation.ClientEmbedding> ClientsEmbenddings {
+      get { return clientsEmbenddings_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ClientsEmbeddings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ClientsEmbeddings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(UserId, other.UserId)) return false;
+      if(!clientsEmbenddings_.Equals(other.clientsEmbenddings_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (userId_ != null) hash ^= UserId.GetHashCode();
+      hash ^= clientsEmbenddings_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (userId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UserId);
+      }
+      clientsEmbenddings_.WriteTo(output, _repeated_clientsEmbenddings_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (userId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UserId);
+      }
+      clientsEmbenddings_.WriteTo(ref output, _repeated_clientsEmbenddings_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (userId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserId);
+      }
+      size += clientsEmbenddings_.CalculateSize(_repeated_clientsEmbenddings_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ClientsEmbeddings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.userId_ != null) {
+        if (userId_ == null) {
+          UserId = new global::Dressy.Recommendation.UUID();
+        }
+        UserId.MergeFrom(other.UserId);
+      }
+      clientsEmbenddings_.Add(other.clientsEmbenddings_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
             if (userId_ == null) {
               UserId = new global::Dressy.Recommendation.UUID();
             }
@@ -1116,14 +1123,7 @@ namespace Dressy.Recommendation {
             break;
           }
           case 18: {
-            if (productId_ == null) {
-              ProductId = new global::Dressy.Recommendation.UUID();
-            }
-            input.ReadMessage(ProductId);
-            break;
-          }
-          case 24: {
-            IsLiked = input.ReadBool();
+            clientsEmbenddings_.AddEntriesFrom(input, _repeated_clientsEmbenddings_codec);
             break;
           }
         }
@@ -1153,14 +1153,7 @@ namespace Dressy.Recommendation {
             break;
           }
           case 18: {
-            if (productId_ == null) {
-              ProductId = new global::Dressy.Recommendation.UUID();
-            }
-            input.ReadMessage(ProductId);
-            break;
-          }
-          case 24: {
-            IsLiked = input.ReadBool();
+            clientsEmbenddings_.AddEntriesFrom(ref input, _repeated_clientsEmbenddings_codec);
             break;
           }
         }
@@ -1359,195 +1352,6 @@ namespace Dressy.Recommendation {
             break;
           case 8: {
             IsUpdate = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ClientEmbeddingFloatRequest : pb::IMessage<ClientEmbeddingFloatRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<ClientEmbeddingFloatRequest> _parser = new pb::MessageParser<ClientEmbeddingFloatRequest>(() => new ClientEmbeddingFloatRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ClientEmbeddingFloatRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dressy.Recommendation.RecommendationReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddingFloatRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddingFloatRequest(ClientEmbeddingFloatRequest other) : this() {
-      requestVector_ = other.requestVector_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbeddingFloatRequest Clone() {
-      return new ClientEmbeddingFloatRequest(this);
-    }
-
-    /// <summary>Field number for the "requestVector" field.</summary>
-    public const int RequestVectorFieldNumber = 1;
-    private static readonly pb::FieldCodec<float> _repeated_requestVector_codec
-        = pb::FieldCodec.ForFloat(10);
-    private readonly pbc::RepeatedField<float> requestVector_ = new pbc::RepeatedField<float>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> RequestVector {
-      get { return requestVector_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as ClientEmbeddingFloatRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ClientEmbeddingFloatRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!requestVector_.Equals(other.requestVector_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= requestVector_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      requestVector_.WriteTo(output, _repeated_requestVector_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      requestVector_.WriteTo(ref output, _repeated_requestVector_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += requestVector_.CalculateSize(_repeated_requestVector_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ClientEmbeddingFloatRequest other) {
-      if (other == null) {
-        return;
-      }
-      requestVector_.Add(other.requestVector_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10:
-          case 13: {
-            requestVector_.AddEntriesFrom(input, _repeated_requestVector_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10:
-          case 13: {
-            requestVector_.AddEntriesFrom(ref input, _repeated_requestVector_codec);
             break;
           }
         }
