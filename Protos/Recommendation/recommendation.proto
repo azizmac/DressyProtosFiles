@@ -13,16 +13,16 @@ message UUID {
 }
 
 message RecommendationRequest {
-  UUID client_id = 1;
+  UUID clientId = 1;
   int32 count = 2;
 }
 
 message RecommendationResponse {
-  repeated UUID requestVector_id = 1;
+  repeated UUID requestVectorId = 1;
 }
 
 message ClientReaction {
-  UUID productId = 1;
+  UUID cardId = 1;
   bool isLiked = 2;
 }
 
@@ -32,5 +32,5 @@ message ClientsEmbeddings {
 }
 
 message ClientEmbeddingResponse{
-  bool is_update = 1;
+  bool isUpdate = 1;
 }

@@ -25,30 +25,30 @@ namespace Dressy.Recommendation {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNSZWNvbW1lbmRhdGlvbi9yZWNvbW1lbmRhdGlvbi5wcm90bxIVRHJlc3N5",
-            "LlJlY29tbWVuZGF0aW9uIhUKBFVVSUQSDQoFdmFsdWUYASABKAkiVgoVUmVj",
-            "b21tZW5kYXRpb25SZXF1ZXN0Ei4KCWNsaWVudF9pZBgBIAEoCzIbLkRyZXNz",
-            "eS5SZWNvbW1lbmRhdGlvbi5VVUlEEg0KBWNvdW50GAIgASgFIk8KFlJlY29t",
-            "bWVuZGF0aW9uUmVzcG9uc2USNQoQcmVxdWVzdFZlY3Rvcl9pZBgBIAMoCzIb",
-            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIlEKDkNsaWVudFJlYWN0aW9u",
-            "Ei4KCXByb2R1Y3RJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5V",
-            "VUlEEg8KB2lzTGlrZWQYAiABKAgigQEKEUNsaWVudHNFbWJlZGRpbmdzEisK",
-            "BnVzZXJJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEEj8K",
-            "EGNsaWVudHNSZWFjdGlvbnMYAiADKAsyJS5EcmVzc3kuUmVjb21tZW5kYXRp",
-            "b24uQ2xpZW50UmVhY3Rpb24iLAoXQ2xpZW50RW1iZWRkaW5nUmVzcG9uc2US",
-            "EQoJaXNfdXBkYXRlGAEgASgIMvwBCg5SZWNvbW1lbmRhdGlvbhJ2ChdHZXRS",
-            "ZWNvbW1lbmRhdGlvbnNDYXJkcxIsLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5S",
-            "ZWNvbW1lbmRhdGlvblJlcXVlc3QaLS5EcmVzc3kuUmVjb21tZW5kYXRpb24u",
-            "UmVjb21tZW5kYXRpb25SZXNwb25zZRJyChZVcGRhdGVDbGllbnRFbWJlZGRp",
-            "bmdzEiguRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudHNFbWJlZGRpbmdz",
-            "Gi4uRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jlc3Bv",
-            "bnNlYgZwcm90bzM="));
+            "LlJlY29tbWVuZGF0aW9uIhUKBFVVSUQSDQoFdmFsdWUYASABKAkiVQoVUmVj",
+            "b21tZW5kYXRpb25SZXF1ZXN0Ei0KCGNsaWVudElkGAEgASgLMhsuRHJlc3N5",
+            "LlJlY29tbWVuZGF0aW9uLlVVSUQSDQoFY291bnQYAiABKAUiTgoWUmVjb21t",
+            "ZW5kYXRpb25SZXNwb25zZRI0Cg9yZXF1ZXN0VmVjdG9ySWQYASADKAsyGy5E",
+            "cmVzc3kuUmVjb21tZW5kYXRpb24uVVVJRCJOCg5DbGllbnRSZWFjdGlvbhIr",
+            "CgZjYXJkSWQYASABKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24uVVVJRBIP",
+            "Cgdpc0xpa2VkGAIgASgIIoEBChFDbGllbnRzRW1iZWRkaW5ncxIrCgZ1c2Vy",
+            "SWQYASABKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24uVVVJRBI/ChBjbGll",
+            "bnRzUmVhY3Rpb25zGAIgAygLMiUuRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNs",
+            "aWVudFJlYWN0aW9uIisKF0NsaWVudEVtYmVkZGluZ1Jlc3BvbnNlEhAKCGlz",
+            "VXBkYXRlGAEgASgIMvwBCg5SZWNvbW1lbmRhdGlvbhJ2ChdHZXRSZWNvbW1l",
+            "bmRhdGlvbnNDYXJkcxIsLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5SZWNvbW1l",
+            "bmRhdGlvblJlcXVlc3QaLS5EcmVzc3kuUmVjb21tZW5kYXRpb24uUmVjb21t",
+            "ZW5kYXRpb25SZXNwb25zZRJyChZVcGRhdGVDbGllbnRFbWJlZGRpbmdzEigu",
+            "RHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudHNFbWJlZGRpbmdzGi4uRHJl",
+            "c3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jlc3BvbnNlYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.UUID), global::Dressy.Recommendation.UUID.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationRequest), global::Dressy.Recommendation.RecommendationRequest.Parser, new[]{ "ClientId", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationResponse), global::Dressy.Recommendation.RecommendationResponse.Parser, new[]{ "RequestVectorId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientReaction), global::Dressy.Recommendation.ClientReaction.Parser, new[]{ "ProductId", "IsLiked" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientReaction), global::Dressy.Recommendation.ClientReaction.Parser, new[]{ "CardId", "IsLiked" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientsEmbeddings), global::Dressy.Recommendation.ClientsEmbeddings.Parser, new[]{ "UserId", "ClientsReactions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingResponse), global::Dressy.Recommendation.ClientEmbeddingResponse.Parser, new[]{ "IsUpdate" }, null, null, null, null)
           }));
@@ -301,7 +301,7 @@ namespace Dressy.Recommendation {
       return new RecommendationRequest(this);
     }
 
-    /// <summary>Field number for the "client_id" field.</summary>
+    /// <summary>Field number for the "clientId" field.</summary>
     public const int ClientIdFieldNumber = 1;
     private global::Dressy.Recommendation.UUID clientId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -544,7 +544,7 @@ namespace Dressy.Recommendation {
       return new RecommendationResponse(this);
     }
 
-    /// <summary>Field number for the "requestVector_id" field.</summary>
+    /// <summary>Field number for the "requestVectorId" field.</summary>
     public const int RequestVectorIdFieldNumber = 1;
     private static readonly pb::FieldCodec<global::Dressy.Recommendation.UUID> _repeated_requestVectorId_codec
         = pb::FieldCodec.ForMessage(10, global::Dressy.Recommendation.UUID.Parser);
@@ -721,7 +721,7 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientReaction(ClientReaction other) : this() {
-      productId_ = other.productId_ != null ? other.productId_.Clone() : null;
+      cardId_ = other.cardId_ != null ? other.cardId_.Clone() : null;
       isLiked_ = other.isLiked_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -732,15 +732,15 @@ namespace Dressy.Recommendation {
       return new ClientReaction(this);
     }
 
-    /// <summary>Field number for the "productId" field.</summary>
-    public const int ProductIdFieldNumber = 1;
-    private global::Dressy.Recommendation.UUID productId_;
+    /// <summary>Field number for the "cardId" field.</summary>
+    public const int CardIdFieldNumber = 1;
+    private global::Dressy.Recommendation.UUID cardId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Dressy.Recommendation.UUID ProductId {
-      get { return productId_; }
+    public global::Dressy.Recommendation.UUID CardId {
+      get { return cardId_; }
       set {
-        productId_ = value;
+        cardId_ = value;
       }
     }
 
@@ -771,7 +771,7 @@ namespace Dressy.Recommendation {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ProductId, other.ProductId)) return false;
+      if (!object.Equals(CardId, other.CardId)) return false;
       if (IsLiked != other.IsLiked) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -780,7 +780,7 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (productId_ != null) hash ^= ProductId.GetHashCode();
+      if (cardId_ != null) hash ^= CardId.GetHashCode();
       if (IsLiked != false) hash ^= IsLiked.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -800,9 +800,9 @@ namespace Dressy.Recommendation {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (productId_ != null) {
+      if (cardId_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(ProductId);
+        output.WriteMessage(CardId);
       }
       if (IsLiked != false) {
         output.WriteRawTag(16);
@@ -818,9 +818,9 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (productId_ != null) {
+      if (cardId_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(ProductId);
+        output.WriteMessage(CardId);
       }
       if (IsLiked != false) {
         output.WriteRawTag(16);
@@ -836,8 +836,8 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (productId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductId);
+      if (cardId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CardId);
       }
       if (IsLiked != false) {
         size += 1 + 1;
@@ -854,11 +854,11 @@ namespace Dressy.Recommendation {
       if (other == null) {
         return;
       }
-      if (other.productId_ != null) {
-        if (productId_ == null) {
-          ProductId = new global::Dressy.Recommendation.UUID();
+      if (other.cardId_ != null) {
+        if (cardId_ == null) {
+          CardId = new global::Dressy.Recommendation.UUID();
         }
-        ProductId.MergeFrom(other.ProductId);
+        CardId.MergeFrom(other.CardId);
       }
       if (other.IsLiked != false) {
         IsLiked = other.IsLiked;
@@ -883,10 +883,10 @@ namespace Dressy.Recommendation {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (productId_ == null) {
-              ProductId = new global::Dressy.Recommendation.UUID();
+            if (cardId_ == null) {
+              CardId = new global::Dressy.Recommendation.UUID();
             }
-            input.ReadMessage(ProductId);
+            input.ReadMessage(CardId);
             break;
           }
           case 16: {
@@ -913,10 +913,10 @@ namespace Dressy.Recommendation {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (productId_ == null) {
-              ProductId = new global::Dressy.Recommendation.UUID();
+            if (cardId_ == null) {
+              CardId = new global::Dressy.Recommendation.UUID();
             }
-            input.ReadMessage(ProductId);
+            input.ReadMessage(CardId);
             break;
           }
           case 16: {
@@ -1208,7 +1208,7 @@ namespace Dressy.Recommendation {
       return new ClientEmbeddingResponse(this);
     }
 
-    /// <summary>Field number for the "is_update" field.</summary>
+    /// <summary>Field number for the "isUpdate" field.</summary>
     public const int IsUpdateFieldNumber = 1;
     private bool isUpdate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
