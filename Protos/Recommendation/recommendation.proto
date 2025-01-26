@@ -28,7 +28,7 @@ message ClientReaction {
 
 message ClientsEmbeddings {
   UUID userId = 1;
-  repeated ClientReaction clientsEmbenddings = 2;
+  repeated ClientReaction clientsReactions = 2;
 }
 
 message ClientEmbeddingResponse{

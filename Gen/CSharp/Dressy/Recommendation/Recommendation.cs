@@ -31,17 +31,17 @@ namespace Dressy.Recommendation {
             "bWVuZGF0aW9uUmVzcG9uc2USNQoQcmVxdWVzdFZlY3Rvcl9pZBgBIAMoCzIb",
             "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIlEKDkNsaWVudFJlYWN0aW9u",
             "Ei4KCXByb2R1Y3RJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5V",
-            "VUlEEg8KB2lzTGlrZWQYAiABKAgigwEKEUNsaWVudHNFbWJlZGRpbmdzEisK",
-            "BnVzZXJJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEEkEK",
-            "EmNsaWVudHNFbWJlbmRkaW5ncxgCIAMoCzIlLkRyZXNzeS5SZWNvbW1lbmRh",
-            "dGlvbi5DbGllbnRSZWFjdGlvbiIsChdDbGllbnRFbWJlZGRpbmdSZXNwb25z",
-            "ZRIRCglpc191cGRhdGUYASABKAgy/AEKDlJlY29tbWVuZGF0aW9uEnYKF0dl",
-            "dFJlY29tbWVuZGF0aW9uc0NhcmRzEiwuRHJlc3N5LlJlY29tbWVuZGF0aW9u",
-            "LlJlY29tbWVuZGF0aW9uUmVxdWVzdBotLkRyZXNzeS5SZWNvbW1lbmRhdGlv",
-            "bi5SZWNvbW1lbmRhdGlvblJlc3BvbnNlEnIKFlVwZGF0ZUNsaWVudEVtYmVk",
-            "ZGluZ3MSKC5EcmVzc3kuUmVjb21tZW5kYXRpb24uQ2xpZW50c0VtYmVkZGlu",
-            "Z3MaLi5EcmVzc3kuUmVjb21tZW5kYXRpb24uQ2xpZW50RW1iZWRkaW5nUmVz",
-            "cG9uc2ViBnByb3RvMw=="));
+            "VUlEEg8KB2lzTGlrZWQYAiABKAgigQEKEUNsaWVudHNFbWJlZGRpbmdzEisK",
+            "BnVzZXJJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEEj8K",
+            "EGNsaWVudHNSZWFjdGlvbnMYAiADKAsyJS5EcmVzc3kuUmVjb21tZW5kYXRp",
+            "b24uQ2xpZW50UmVhY3Rpb24iLAoXQ2xpZW50RW1iZWRkaW5nUmVzcG9uc2US",
+            "EQoJaXNfdXBkYXRlGAEgASgIMvwBCg5SZWNvbW1lbmRhdGlvbhJ2ChdHZXRS",
+            "ZWNvbW1lbmRhdGlvbnNDYXJkcxIsLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5S",
+            "ZWNvbW1lbmRhdGlvblJlcXVlc3QaLS5EcmVzc3kuUmVjb21tZW5kYXRpb24u",
+            "UmVjb21tZW5kYXRpb25SZXNwb25zZRJyChZVcGRhdGVDbGllbnRFbWJlZGRp",
+            "bmdzEiguRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudHNFbWJlZGRpbmdz",
+            "Gi4uRHJlc3N5LlJlY29tbWVuZGF0aW9uLkNsaWVudEVtYmVkZGluZ1Jlc3Bv",
+            "bnNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -49,7 +49,7 @@ namespace Dressy.Recommendation {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationRequest), global::Dressy.Recommendation.RecommendationRequest.Parser, new[]{ "ClientId", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationResponse), global::Dressy.Recommendation.RecommendationResponse.Parser, new[]{ "RequestVectorId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientReaction), global::Dressy.Recommendation.ClientReaction.Parser, new[]{ "ProductId", "IsLiked" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientsEmbeddings), global::Dressy.Recommendation.ClientsEmbeddings.Parser, new[]{ "UserId", "ClientsEmbenddings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientsEmbeddings), global::Dressy.Recommendation.ClientsEmbeddings.Parser, new[]{ "UserId", "ClientsReactions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingResponse), global::Dressy.Recommendation.ClientEmbeddingResponse.Parser, new[]{ "IsUpdate" }, null, null, null, null)
           }));
     }
@@ -966,7 +966,7 @@ namespace Dressy.Recommendation {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientsEmbeddings(ClientsEmbeddings other) : this() {
       userId_ = other.userId_ != null ? other.userId_.Clone() : null;
-      clientsEmbenddings_ = other.clientsEmbenddings_.Clone();
+      clientsReactions_ = other.clientsReactions_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -988,15 +988,15 @@ namespace Dressy.Recommendation {
       }
     }
 
-    /// <summary>Field number for the "clientsEmbenddings" field.</summary>
-    public const int ClientsEmbenddingsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Dressy.Recommendation.ClientReaction> _repeated_clientsEmbenddings_codec
+    /// <summary>Field number for the "clientsReactions" field.</summary>
+    public const int ClientsReactionsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Dressy.Recommendation.ClientReaction> _repeated_clientsReactions_codec
         = pb::FieldCodec.ForMessage(18, global::Dressy.Recommendation.ClientReaction.Parser);
-    private readonly pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction> clientsEmbenddings_ = new pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction>();
+    private readonly pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction> clientsReactions_ = new pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction> ClientsEmbenddings {
-      get { return clientsEmbenddings_; }
+    public pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction> ClientsReactions {
+      get { return clientsReactions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1015,7 +1015,7 @@ namespace Dressy.Recommendation {
         return true;
       }
       if (!object.Equals(UserId, other.UserId)) return false;
-      if(!clientsEmbenddings_.Equals(other.clientsEmbenddings_)) return false;
+      if(!clientsReactions_.Equals(other.clientsReactions_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1024,7 +1024,7 @@ namespace Dressy.Recommendation {
     public override int GetHashCode() {
       int hash = 1;
       if (userId_ != null) hash ^= UserId.GetHashCode();
-      hash ^= clientsEmbenddings_.GetHashCode();
+      hash ^= clientsReactions_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1047,7 +1047,7 @@ namespace Dressy.Recommendation {
         output.WriteRawTag(10);
         output.WriteMessage(UserId);
       }
-      clientsEmbenddings_.WriteTo(output, _repeated_clientsEmbenddings_codec);
+      clientsReactions_.WriteTo(output, _repeated_clientsReactions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1062,7 +1062,7 @@ namespace Dressy.Recommendation {
         output.WriteRawTag(10);
         output.WriteMessage(UserId);
       }
-      clientsEmbenddings_.WriteTo(ref output, _repeated_clientsEmbenddings_codec);
+      clientsReactions_.WriteTo(ref output, _repeated_clientsReactions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1076,7 +1076,7 @@ namespace Dressy.Recommendation {
       if (userId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserId);
       }
-      size += clientsEmbenddings_.CalculateSize(_repeated_clientsEmbenddings_codec);
+      size += clientsReactions_.CalculateSize(_repeated_clientsReactions_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1095,7 +1095,7 @@ namespace Dressy.Recommendation {
         }
         UserId.MergeFrom(other.UserId);
       }
-      clientsEmbenddings_.Add(other.clientsEmbenddings_);
+      clientsReactions_.Add(other.clientsReactions_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1123,7 +1123,7 @@ namespace Dressy.Recommendation {
             break;
           }
           case 18: {
-            clientsEmbenddings_.AddEntriesFrom(input, _repeated_clientsEmbenddings_codec);
+            clientsReactions_.AddEntriesFrom(input, _repeated_clientsReactions_codec);
             break;
           }
         }
@@ -1153,7 +1153,7 @@ namespace Dressy.Recommendation {
             break;
           }
           case 18: {
-            clientsEmbenddings_.AddEntriesFrom(ref input, _repeated_clientsEmbenddings_codec);
+            clientsReactions_.AddEntriesFrom(ref input, _repeated_clientsReactions_codec);
             break;
           }
         }
