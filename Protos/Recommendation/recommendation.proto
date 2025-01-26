@@ -21,14 +21,14 @@ message RecommendationResponse {
   repeated UUID requestVector_id = 1;
 }
 
-message ClientEmbedding {
+message ClientReaction {
   UUID productId = 1;
   bool isLiked = 2;
 }
 
 message ClientsEmbeddings {
   UUID userId = 1;
-  repeated ClientEmbedding clientsEmbenddings = 2;
+  repeated ClientReaction clientsEmbenddings = 2;
 }
 
 message ClientEmbeddingResponse{

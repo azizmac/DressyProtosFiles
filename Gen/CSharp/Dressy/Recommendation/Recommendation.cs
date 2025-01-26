@@ -29,26 +29,26 @@ namespace Dressy.Recommendation {
             "b21tZW5kYXRpb25SZXF1ZXN0Ei4KCWNsaWVudF9pZBgBIAEoCzIbLkRyZXNz",
             "eS5SZWNvbW1lbmRhdGlvbi5VVUlEEg0KBWNvdW50GAIgASgFIk8KFlJlY29t",
             "bWVuZGF0aW9uUmVzcG9uc2USNQoQcmVxdWVzdFZlY3Rvcl9pZBgBIAMoCzIb",
-            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIlIKD0NsaWVudEVtYmVkZGlu",
-            "ZxIuCglwcm9kdWN0SWQYASABKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24u",
-            "VVVJRBIPCgdpc0xpa2VkGAIgASgIIoQBChFDbGllbnRzRW1iZWRkaW5ncxIr",
-            "CgZ1c2VySWQYASABKAsyGy5EcmVzc3kuUmVjb21tZW5kYXRpb24uVVVJRBJC",
-            "ChJjbGllbnRzRW1iZW5kZGluZ3MYAiADKAsyJi5EcmVzc3kuUmVjb21tZW5k",
-            "YXRpb24uQ2xpZW50RW1iZWRkaW5nIiwKF0NsaWVudEVtYmVkZGluZ1Jlc3Bv",
-            "bnNlEhEKCWlzX3VwZGF0ZRgBIAEoCDL8AQoOUmVjb21tZW5kYXRpb24SdgoX",
-            "R2V0UmVjb21tZW5kYXRpb25zQ2FyZHMSLC5EcmVzc3kuUmVjb21tZW5kYXRp",
-            "b24uUmVjb21tZW5kYXRpb25SZXF1ZXN0Gi0uRHJlc3N5LlJlY29tbWVuZGF0",
-            "aW9uLlJlY29tbWVuZGF0aW9uUmVzcG9uc2UScgoWVXBkYXRlQ2xpZW50RW1i",
-            "ZWRkaW5ncxIoLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRzRW1iZWRk",
-            "aW5ncxouLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5DbGllbnRFbWJlZGRpbmdS",
-            "ZXNwb25zZWIGcHJvdG8z"));
+            "LkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEIlEKDkNsaWVudFJlYWN0aW9u",
+            "Ei4KCXByb2R1Y3RJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5V",
+            "VUlEEg8KB2lzTGlrZWQYAiABKAgigwEKEUNsaWVudHNFbWJlZGRpbmdzEisK",
+            "BnVzZXJJZBgBIAEoCzIbLkRyZXNzeS5SZWNvbW1lbmRhdGlvbi5VVUlEEkEK",
+            "EmNsaWVudHNFbWJlbmRkaW5ncxgCIAMoCzIlLkRyZXNzeS5SZWNvbW1lbmRh",
+            "dGlvbi5DbGllbnRSZWFjdGlvbiIsChdDbGllbnRFbWJlZGRpbmdSZXNwb25z",
+            "ZRIRCglpc191cGRhdGUYASABKAgy/AEKDlJlY29tbWVuZGF0aW9uEnYKF0dl",
+            "dFJlY29tbWVuZGF0aW9uc0NhcmRzEiwuRHJlc3N5LlJlY29tbWVuZGF0aW9u",
+            "LlJlY29tbWVuZGF0aW9uUmVxdWVzdBotLkRyZXNzeS5SZWNvbW1lbmRhdGlv",
+            "bi5SZWNvbW1lbmRhdGlvblJlc3BvbnNlEnIKFlVwZGF0ZUNsaWVudEVtYmVk",
+            "ZGluZ3MSKC5EcmVzc3kuUmVjb21tZW5kYXRpb24uQ2xpZW50c0VtYmVkZGlu",
+            "Z3MaLi5EcmVzc3kuUmVjb21tZW5kYXRpb24uQ2xpZW50RW1iZWRkaW5nUmVz",
+            "cG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.UUID), global::Dressy.Recommendation.UUID.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationRequest), global::Dressy.Recommendation.RecommendationRequest.Parser, new[]{ "ClientId", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.RecommendationResponse), global::Dressy.Recommendation.RecommendationResponse.Parser, new[]{ "RequestVectorId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbedding), global::Dressy.Recommendation.ClientEmbedding.Parser, new[]{ "ProductId", "IsLiked" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientReaction), global::Dressy.Recommendation.ClientReaction.Parser, new[]{ "ProductId", "IsLiked" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientsEmbeddings), global::Dressy.Recommendation.ClientsEmbeddings.Parser, new[]{ "UserId", "ClientsEmbenddings" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Recommendation.ClientEmbeddingResponse), global::Dressy.Recommendation.ClientEmbeddingResponse.Parser, new[]{ "IsUpdate" }, null, null, null, null)
           }));
@@ -687,16 +687,16 @@ namespace Dressy.Recommendation {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ClientEmbedding : pb::IMessage<ClientEmbedding>
+  public sealed partial class ClientReaction : pb::IMessage<ClientReaction>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ClientEmbedding> _parser = new pb::MessageParser<ClientEmbedding>(() => new ClientEmbedding());
+    private static readonly pb::MessageParser<ClientReaction> _parser = new pb::MessageParser<ClientReaction>(() => new ClientReaction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ClientEmbedding> Parser { get { return _parser; } }
+    public static pb::MessageParser<ClientReaction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -712,7 +712,7 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbedding() {
+    public ClientReaction() {
       OnConstruction();
     }
 
@@ -720,7 +720,7 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbedding(ClientEmbedding other) : this() {
+    public ClientReaction(ClientReaction other) : this() {
       productId_ = other.productId_ != null ? other.productId_.Clone() : null;
       isLiked_ = other.isLiked_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -728,8 +728,8 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ClientEmbedding Clone() {
-      return new ClientEmbedding(this);
+    public ClientReaction Clone() {
+      return new ClientReaction(this);
     }
 
     /// <summary>Field number for the "productId" field.</summary>
@@ -759,12 +759,12 @@ namespace Dressy.Recommendation {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ClientEmbedding);
+      return Equals(other as ClientReaction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ClientEmbedding other) {
+    public bool Equals(ClientReaction other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -850,7 +850,7 @@ namespace Dressy.Recommendation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ClientEmbedding other) {
+    public void MergeFrom(ClientReaction other) {
       if (other == null) {
         return;
       }
@@ -990,12 +990,12 @@ namespace Dressy.Recommendation {
 
     /// <summary>Field number for the "clientsEmbenddings" field.</summary>
     public const int ClientsEmbenddingsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Dressy.Recommendation.ClientEmbedding> _repeated_clientsEmbenddings_codec
-        = pb::FieldCodec.ForMessage(18, global::Dressy.Recommendation.ClientEmbedding.Parser);
-    private readonly pbc::RepeatedField<global::Dressy.Recommendation.ClientEmbedding> clientsEmbenddings_ = new pbc::RepeatedField<global::Dressy.Recommendation.ClientEmbedding>();
+    private static readonly pb::FieldCodec<global::Dressy.Recommendation.ClientReaction> _repeated_clientsEmbenddings_codec
+        = pb::FieldCodec.ForMessage(18, global::Dressy.Recommendation.ClientReaction.Parser);
+    private readonly pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction> clientsEmbenddings_ = new pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Dressy.Recommendation.ClientEmbedding> ClientsEmbenddings {
+    public pbc::RepeatedField<global::Dressy.Recommendation.ClientReaction> ClientsEmbenddings {
       get { return clientsEmbenddings_; }
     }
 
