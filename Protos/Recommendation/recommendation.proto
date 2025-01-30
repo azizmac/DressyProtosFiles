@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package Dressy.Recommendation;
+import "Common/common.proto";
 
 service Recommendation {
 
@@ -8,26 +9,25 @@ service Recommendation {
   rpc UpdateClientEmbeddings (ClientsEmbeddings) returns (ClientEmbeddingResponse);
 }
 
-message UUID {
-  string value = 1;
-}
+
 
 message RecommendationRequest {
-  UUID clientId = 1;
+  Common.UUID clientId = 1;
   int32 count = 2;
 }
 
 message RecommendationResponse {
-  repeated UUID requestVectorId = 1;
+  repeated Common.UUID requestVectorId = 1;
 }
 
 message ClientReaction {
-  UUID cardId = 1;
-  bool isLiked = 2;
+  Common.UUID cardId = 1;
+  Common.UUID categoryId = 2;
+  bool isLiked = 3;
 }
 
 message ClientsEmbeddings {
-  UUID userId = 1;
+  Common.UUID userId = 1;
   repeated ClientReaction clientsReactions = 2;
 }
 

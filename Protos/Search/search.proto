@@ -2,20 +2,28 @@ syntax = "proto3";
 
 
 package Dressy.Search;
+import "Common/common.proto";
+
+service Search {
+  rpc GetRecommendations (RecommendationRequest) returns (RecommendationResponse);
+  rpc GetRandomEmbenddings (RandomEmbenddingRequest) returns (RandomEmbenddingResponse);
+}
+
 
 message RecommendationRequest {
-    UUID client_id = 1;
+    Common.UUID clientId = 1;
     int32 count = 2; 
 }
 
 message RecommendationResponse {
-   repeated UUID requestVector_id = 1; 
+    repeated Common.UUID requestVector_id = 1; 
 }
 
-message UUID {
-   string value = 1;
+message RandomEmbenddingRequest {
+   Common.UUID clientId = 1;
+   Common.UUID categoryUserId = 2;
+}
+message RandomEmbenddingResponse {
+   Common.UUID cardId = 1;
 }
 
-service Search {
-    rpc GetRecommendations (RecommendationRequest) returns (RecommendationResponse);
-}
