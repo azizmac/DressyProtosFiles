@@ -17,3 +17,18 @@ proto-gen-csharp:
 		--plugin=protoc-gen-grpc=$(PLUGIN_PATH) \
 		--csharp_opt=base_namespace \
 		--grpc_opt=base_namespace
+
+proto-gen-py:
+	@if ! [ -d Gen/Python ]; then \
+		mkdir -p Gen/Python; \
+	fi
+	pip3 install grpcio-tools
+	python3 -m grpc_tools.protoc -I Protos \
+		Protos/Common/common.proto \
+		Protos/FileExchange/fileexchange.proto \
+		Protos/Logger/logger.proto \
+		Protos/ProccesingDatabase/processingdatabase.proto \
+		Protos/Recommendation/recommendation.proto \
+		Protos/Search/search.proto \
+		--python_out=Gen/Python \
+		--grpc_python_out=Gen/Python
