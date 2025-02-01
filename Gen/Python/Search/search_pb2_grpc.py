@@ -39,10 +39,10 @@ class SearchStub(object):
                 request_serializer=Search_dot_search__pb2.RecommendationRequest.SerializeToString,
                 response_deserializer=Search_dot_search__pb2.RecommendationResponse.FromString,
                 _registered_method=True)
-        self.GetRandomEmbenddings = channel.unary_unary(
-                '/Dressy.Search.Search/GetRandomEmbenddings',
-                request_serializer=Search_dot_search__pb2.RandomEmbenddingRequest.SerializeToString,
-                response_deserializer=Search_dot_search__pb2.RandomEmbenddingResponse.FromString,
+        self.GetRandomEmbeddings = channel.unary_unary(
+                '/Dressy.Search.Search/GetRandomEmbeddings',
+                request_serializer=Search_dot_search__pb2.RandomEmbeddingRequest.SerializeToString,
+                response_deserializer=Search_dot_search__pb2.RandomEmbeddingResponse.FromString,
                 _registered_method=True)
 
 
@@ -55,7 +55,7 @@ class SearchServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetRandomEmbenddings(self, request, context):
+    def GetRandomEmbeddings(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -69,10 +69,10 @@ def add_SearchServicer_to_server(servicer, server):
                     request_deserializer=Search_dot_search__pb2.RecommendationRequest.FromString,
                     response_serializer=Search_dot_search__pb2.RecommendationResponse.SerializeToString,
             ),
-            'GetRandomEmbenddings': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetRandomEmbenddings,
-                    request_deserializer=Search_dot_search__pb2.RandomEmbenddingRequest.FromString,
-                    response_serializer=Search_dot_search__pb2.RandomEmbenddingResponse.SerializeToString,
+            'GetRandomEmbeddings': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetRandomEmbeddings,
+                    request_deserializer=Search_dot_search__pb2.RandomEmbeddingRequest.FromString,
+                    response_serializer=Search_dot_search__pb2.RandomEmbeddingResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -113,7 +113,7 @@ class Search(object):
             _registered_method=True)
 
     @staticmethod
-    def GetRandomEmbenddings(request,
+    def GetRandomEmbeddings(request,
             target,
             options=(),
             channel_credentials=None,
@@ -126,9 +126,9 @@ class Search(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/Dressy.Search.Search/GetRandomEmbenddings',
-            Search_dot_search__pb2.RandomEmbenddingRequest.SerializeToString,
-            Search_dot_search__pb2.RandomEmbenddingResponse.FromString,
+            '/Dressy.Search.Search/GetRandomEmbeddings',
+            Search_dot_search__pb2.RandomEmbeddingRequest.SerializeToString,
+            Search_dot_search__pb2.RandomEmbeddingResponse.FromString,
             options,
             channel_credentials,
             insecure,

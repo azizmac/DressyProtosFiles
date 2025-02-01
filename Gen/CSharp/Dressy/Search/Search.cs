@@ -28,23 +28,23 @@ namespace Dressy.Search {
             "Y29tbW9uLnByb3RvIk0KFVJlY29tbWVuZGF0aW9uUmVxdWVzdBIlCghjbGll",
             "bnRJZBgBIAEoCzITLkRyZXNzeS5Db21tb24uVVVJRBINCgVjb3VudBgCIAEo",
             "BSJHChZSZWNvbW1lbmRhdGlvblJlc3BvbnNlEi0KEHJlcXVlc3RWZWN0b3Jf",
-            "aWQYASADKAsyEy5EcmVzc3kuQ29tbW9uLlVVSUQibQoXUmFuZG9tRW1iZW5k",
-            "ZGluZ1JlcXVlc3QSJQoIY2xpZW50SWQYASABKAsyEy5EcmVzc3kuQ29tbW9u",
-            "LlVVSUQSKwoOY2F0ZWdvcnlVc2VySWQYAiABKAsyEy5EcmVzc3kuQ29tbW9u",
-            "LlVVSUQiPwoYUmFuZG9tRW1iZW5kZGluZ1Jlc3BvbnNlEiMKBmNhcmRJZBgB",
-            "IAEoCzITLkRyZXNzeS5Db21tb24uVVVJRDLUAQoGU2VhcmNoEmEKEkdldFJl",
-            "Y29tbWVuZGF0aW9ucxIkLkRyZXNzeS5TZWFyY2guUmVjb21tZW5kYXRpb25S",
-            "ZXF1ZXN0GiUuRHJlc3N5LlNlYXJjaC5SZWNvbW1lbmRhdGlvblJlc3BvbnNl",
-            "EmcKFEdldFJhbmRvbUVtYmVuZGRpbmdzEiYuRHJlc3N5LlNlYXJjaC5SYW5k",
-            "b21FbWJlbmRkaW5nUmVxdWVzdBonLkRyZXNzeS5TZWFyY2guUmFuZG9tRW1i",
-            "ZW5kZGluZ1Jlc3BvbnNlYgZwcm90bzM="));
+            "aWQYASADKAsyEy5EcmVzc3kuQ29tbW9uLlVVSUQibAoWUmFuZG9tRW1iZWRk",
+            "aW5nUmVxdWVzdBIlCghjbGllbnRJZBgBIAEoCzITLkRyZXNzeS5Db21tb24u",
+            "VVVJRBIrCg5jYXRlZ29yeVVzZXJJZBgCIAEoCzITLkRyZXNzeS5Db21tb24u",
+            "VVVJRCI+ChdSYW5kb21FbWJlZGRpbmdSZXNwb25zZRIjCgZjYXJkSWQYASAB",
+            "KAsyEy5EcmVzc3kuQ29tbW9uLlVVSUQy0QEKBlNlYXJjaBJhChJHZXRSZWNv",
+            "bW1lbmRhdGlvbnMSJC5EcmVzc3kuU2VhcmNoLlJlY29tbWVuZGF0aW9uUmVx",
+            "dWVzdBolLkRyZXNzeS5TZWFyY2guUmVjb21tZW5kYXRpb25SZXNwb25zZRJk",
+            "ChNHZXRSYW5kb21FbWJlZGRpbmdzEiUuRHJlc3N5LlNlYXJjaC5SYW5kb21F",
+            "bWJlZGRpbmdSZXF1ZXN0GiYuRHJlc3N5LlNlYXJjaC5SYW5kb21FbWJlZGRp",
+            "bmdSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Dressy.Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Search.RecommendationRequest), global::Dressy.Search.RecommendationRequest.Parser, new[]{ "ClientId", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Search.RecommendationResponse), global::Dressy.Search.RecommendationResponse.Parser, new[]{ "RequestVectorId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Search.RandomEmbenddingRequest), global::Dressy.Search.RandomEmbenddingRequest.Parser, new[]{ "ClientId", "CategoryUserId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Search.RandomEmbenddingResponse), global::Dressy.Search.RandomEmbenddingResponse.Parser, new[]{ "CardId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Search.RandomEmbeddingRequest), global::Dressy.Search.RandomEmbeddingRequest.Parser, new[]{ "ClientId", "CategoryUserId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dressy.Search.RandomEmbeddingResponse), global::Dressy.Search.RandomEmbeddingResponse.Parser, new[]{ "CardId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -483,16 +483,16 @@ namespace Dressy.Search {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class RandomEmbenddingRequest : pb::IMessage<RandomEmbenddingRequest>
+  public sealed partial class RandomEmbeddingRequest : pb::IMessage<RandomEmbeddingRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<RandomEmbenddingRequest> _parser = new pb::MessageParser<RandomEmbenddingRequest>(() => new RandomEmbenddingRequest());
+    private static readonly pb::MessageParser<RandomEmbeddingRequest> _parser = new pb::MessageParser<RandomEmbeddingRequest>(() => new RandomEmbeddingRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<RandomEmbenddingRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<RandomEmbeddingRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -508,7 +508,7 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RandomEmbenddingRequest() {
+    public RandomEmbeddingRequest() {
       OnConstruction();
     }
 
@@ -516,7 +516,7 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RandomEmbenddingRequest(RandomEmbenddingRequest other) : this() {
+    public RandomEmbeddingRequest(RandomEmbeddingRequest other) : this() {
       clientId_ = other.clientId_ != null ? other.clientId_.Clone() : null;
       categoryUserId_ = other.categoryUserId_ != null ? other.categoryUserId_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -524,8 +524,8 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RandomEmbenddingRequest Clone() {
-      return new RandomEmbenddingRequest(this);
+    public RandomEmbeddingRequest Clone() {
+      return new RandomEmbeddingRequest(this);
     }
 
     /// <summary>Field number for the "clientId" field.</summary>
@@ -555,12 +555,12 @@ namespace Dressy.Search {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as RandomEmbenddingRequest);
+      return Equals(other as RandomEmbeddingRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(RandomEmbenddingRequest other) {
+    public bool Equals(RandomEmbeddingRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -646,7 +646,7 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(RandomEmbenddingRequest other) {
+    public void MergeFrom(RandomEmbeddingRequest other) {
       if (other == null) {
         return;
       }
@@ -736,16 +736,16 @@ namespace Dressy.Search {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class RandomEmbenddingResponse : pb::IMessage<RandomEmbenddingResponse>
+  public sealed partial class RandomEmbeddingResponse : pb::IMessage<RandomEmbeddingResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<RandomEmbenddingResponse> _parser = new pb::MessageParser<RandomEmbenddingResponse>(() => new RandomEmbenddingResponse());
+    private static readonly pb::MessageParser<RandomEmbeddingResponse> _parser = new pb::MessageParser<RandomEmbeddingResponse>(() => new RandomEmbeddingResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<RandomEmbenddingResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<RandomEmbeddingResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -761,7 +761,7 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RandomEmbenddingResponse() {
+    public RandomEmbeddingResponse() {
       OnConstruction();
     }
 
@@ -769,15 +769,15 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RandomEmbenddingResponse(RandomEmbenddingResponse other) : this() {
+    public RandomEmbeddingResponse(RandomEmbeddingResponse other) : this() {
       cardId_ = other.cardId_ != null ? other.cardId_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RandomEmbenddingResponse Clone() {
-      return new RandomEmbenddingResponse(this);
+    public RandomEmbeddingResponse Clone() {
+      return new RandomEmbeddingResponse(this);
     }
 
     /// <summary>Field number for the "cardId" field.</summary>
@@ -795,12 +795,12 @@ namespace Dressy.Search {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as RandomEmbenddingResponse);
+      return Equals(other as RandomEmbeddingResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(RandomEmbenddingResponse other) {
+    public bool Equals(RandomEmbeddingResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -873,7 +873,7 @@ namespace Dressy.Search {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(RandomEmbenddingResponse other) {
+    public void MergeFrom(RandomEmbeddingResponse other) {
       if (other == null) {
         return;
       }

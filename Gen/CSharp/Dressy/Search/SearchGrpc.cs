@@ -50,9 +50,9 @@ namespace Dressy.Search {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Dressy.Search.RecommendationResponse> __Marshaller_Dressy_Search_RecommendationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Search.RecommendationResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Dressy.Search.RandomEmbenddingRequest> __Marshaller_Dressy_Search_RandomEmbenddingRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Search.RandomEmbenddingRequest.Parser));
+    static readonly grpc::Marshaller<global::Dressy.Search.RandomEmbeddingRequest> __Marshaller_Dressy_Search_RandomEmbeddingRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Search.RandomEmbeddingRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Dressy.Search.RandomEmbenddingResponse> __Marshaller_Dressy_Search_RandomEmbenddingResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Search.RandomEmbenddingResponse.Parser));
+    static readonly grpc::Marshaller<global::Dressy.Search.RandomEmbeddingResponse> __Marshaller_Dressy_Search_RandomEmbeddingResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Dressy.Search.RandomEmbeddingResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Dressy.Search.RecommendationRequest, global::Dressy.Search.RecommendationResponse> __Method_GetRecommendations = new grpc::Method<global::Dressy.Search.RecommendationRequest, global::Dressy.Search.RecommendationResponse>(
@@ -63,12 +63,12 @@ namespace Dressy.Search {
         __Marshaller_Dressy_Search_RecommendationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Dressy.Search.RandomEmbenddingRequest, global::Dressy.Search.RandomEmbenddingResponse> __Method_GetRandomEmbenddings = new grpc::Method<global::Dressy.Search.RandomEmbenddingRequest, global::Dressy.Search.RandomEmbenddingResponse>(
+    static readonly grpc::Method<global::Dressy.Search.RandomEmbeddingRequest, global::Dressy.Search.RandomEmbeddingResponse> __Method_GetRandomEmbeddings = new grpc::Method<global::Dressy.Search.RandomEmbeddingRequest, global::Dressy.Search.RandomEmbeddingResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetRandomEmbenddings",
-        __Marshaller_Dressy_Search_RandomEmbenddingRequest,
-        __Marshaller_Dressy_Search_RandomEmbenddingResponse);
+        "GetRandomEmbeddings",
+        __Marshaller_Dressy_Search_RandomEmbeddingRequest,
+        __Marshaller_Dressy_Search_RandomEmbeddingResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -87,7 +87,7 @@ namespace Dressy.Search {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Dressy.Search.RandomEmbenddingResponse> GetRandomEmbenddings(global::Dressy.Search.RandomEmbenddingRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Dressy.Search.RandomEmbeddingResponse> GetRandomEmbeddings(global::Dressy.Search.RandomEmbeddingRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -142,24 +142,24 @@ namespace Dressy.Search {
         return CallInvoker.AsyncUnaryCall(__Method_GetRecommendations, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Search.RandomEmbenddingResponse GetRandomEmbenddings(global::Dressy.Search.RandomEmbenddingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Dressy.Search.RandomEmbeddingResponse GetRandomEmbeddings(global::Dressy.Search.RandomEmbeddingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetRandomEmbenddings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetRandomEmbeddings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Dressy.Search.RandomEmbenddingResponse GetRandomEmbenddings(global::Dressy.Search.RandomEmbenddingRequest request, grpc::CallOptions options)
+      public virtual global::Dressy.Search.RandomEmbeddingResponse GetRandomEmbeddings(global::Dressy.Search.RandomEmbeddingRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetRandomEmbenddings, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetRandomEmbeddings, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Search.RandomEmbenddingResponse> GetRandomEmbenddingsAsync(global::Dressy.Search.RandomEmbenddingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Dressy.Search.RandomEmbeddingResponse> GetRandomEmbeddingsAsync(global::Dressy.Search.RandomEmbeddingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetRandomEmbenddingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetRandomEmbeddingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Dressy.Search.RandomEmbenddingResponse> GetRandomEmbenddingsAsync(global::Dressy.Search.RandomEmbenddingRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Dressy.Search.RandomEmbeddingResponse> GetRandomEmbeddingsAsync(global::Dressy.Search.RandomEmbeddingRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetRandomEmbenddings, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetRandomEmbeddings, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -176,7 +176,7 @@ namespace Dressy.Search {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetRecommendations, serviceImpl.GetRecommendations)
-          .AddMethod(__Method_GetRandomEmbenddings, serviceImpl.GetRandomEmbenddings).Build();
+          .AddMethod(__Method_GetRandomEmbeddings, serviceImpl.GetRandomEmbeddings).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -187,7 +187,7 @@ namespace Dressy.Search {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, SearchBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetRecommendations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Search.RecommendationRequest, global::Dressy.Search.RecommendationResponse>(serviceImpl.GetRecommendations));
-      serviceBinder.AddMethod(__Method_GetRandomEmbenddings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Search.RandomEmbenddingRequest, global::Dressy.Search.RandomEmbenddingResponse>(serviceImpl.GetRandomEmbenddings));
+      serviceBinder.AddMethod(__Method_GetRandomEmbeddings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dressy.Search.RandomEmbeddingRequest, global::Dressy.Search.RandomEmbeddingResponse>(serviceImpl.GetRandomEmbeddings));
     }
 
   }

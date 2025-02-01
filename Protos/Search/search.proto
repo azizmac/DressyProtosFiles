@@ -6,7 +6,7 @@ import "Common/common.proto";
 
 service Search {
   rpc GetRecommendations (RecommendationRequest) returns (RecommendationResponse);
-  rpc GetRandomEmbenddings (RandomEmbenddingRequest) returns (RandomEmbenddingResponse);
+  rpc GetRandomEmbeddings (RandomEmbeddingRequest) returns (RandomEmbeddingResponse);
 }
 
 
@@ -19,11 +19,11 @@ message RecommendationResponse {
     repeated Common.UUID requestVector_id = 1; 
 }
 
-message RandomEmbenddingRequest {
+message RandomEmbeddingRequest {
    Common.UUID clientId = 1;
    Common.UUID categoryUserId = 2;
 }
-message RandomEmbenddingResponse {
+message RandomEmbeddingResponse {
    Common.UUID cardId = 1;
 }
 

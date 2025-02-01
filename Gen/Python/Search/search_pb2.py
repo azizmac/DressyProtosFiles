@@ -25,7 +25,7 @@ _sym_db = _symbol_database.Default()
 from Common import common_pb2 as Common_dot_common__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13Search/search.proto\x12\rDressy.Search\x1a\x13\x43ommon/common.proto\"M\n\x15RecommendationRequest\x12%\n\x08\x63lientId\x18\x01 \x01(\x0b\x32\x13.Dressy.Common.UUID\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"G\n\x16RecommendationResponse\x12-\n\x10requestVector_id\x18\x01 \x03(\x0b\x32\x13.Dressy.Common.UUID\"m\n\x17RandomEmbenddingRequest\x12%\n\x08\x63lientId\x18\x01 \x01(\x0b\x32\x13.Dressy.Common.UUID\x12+\n\x0e\x63\x61tegoryUserId\x18\x02 \x01(\x0b\x32\x13.Dressy.Common.UUID\"?\n\x18RandomEmbenddingResponse\x12#\n\x06\x63\x61rdId\x18\x01 \x01(\x0b\x32\x13.Dressy.Common.UUID2\xd4\x01\n\x06Search\x12\x61\n\x12GetRecommendations\x12$.Dressy.Search.RecommendationRequest\x1a%.Dressy.Search.RecommendationResponse\x12g\n\x14GetRandomEmbenddings\x12&.Dressy.Search.RandomEmbenddingRequest\x1a\'.Dressy.Search.RandomEmbenddingResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13Search/search.proto\x12\rDressy.Search\x1a\x13\x43ommon/common.proto\"M\n\x15RecommendationRequest\x12%\n\x08\x63lientId\x18\x01 \x01(\x0b\x32\x13.Dressy.Common.UUID\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"G\n\x16RecommendationResponse\x12-\n\x10requestVector_id\x18\x01 \x03(\x0b\x32\x13.Dressy.Common.UUID\"l\n\x16RandomEmbeddingRequest\x12%\n\x08\x63lientId\x18\x01 \x01(\x0b\x32\x13.Dressy.Common.UUID\x12+\n\x0e\x63\x61tegoryUserId\x18\x02 \x01(\x0b\x32\x13.Dressy.Common.UUID\">\n\x17RandomEmbeddingResponse\x12#\n\x06\x63\x61rdId\x18\x01 \x01(\x0b\x32\x13.Dressy.Common.UUID2\xd1\x01\n\x06Search\x12\x61\n\x12GetRecommendations\x12$.Dressy.Search.RecommendationRequest\x1a%.Dressy.Search.RecommendationResponse\x12\x64\n\x13GetRandomEmbeddings\x12%.Dressy.Search.RandomEmbeddingRequest\x1a&.Dressy.Search.RandomEmbeddingResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -36,10 +36,10 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_RECOMMENDATIONREQUEST']._serialized_end=136
   _globals['_RECOMMENDATIONRESPONSE']._serialized_start=138
   _globals['_RECOMMENDATIONRESPONSE']._serialized_end=209
-  _globals['_RANDOMEMBENDDINGREQUEST']._serialized_start=211
-  _globals['_RANDOMEMBENDDINGREQUEST']._serialized_end=320
-  _globals['_RANDOMEMBENDDINGRESPONSE']._serialized_start=322
-  _globals['_RANDOMEMBENDDINGRESPONSE']._serialized_end=385
-  _globals['_SEARCH']._serialized_start=388
-  _globals['_SEARCH']._serialized_end=600
+  _globals['_RANDOMEMBEDDINGREQUEST']._serialized_start=211
+  _globals['_RANDOMEMBEDDINGREQUEST']._serialized_end=319
+  _globals['_RANDOMEMBEDDINGRESPONSE']._serialized_start=321
+  _globals['_RANDOMEMBEDDINGRESPONSE']._serialized_end=383
+  _globals['_SEARCH']._serialized_start=386
+  _globals['_SEARCH']._serialized_end=595
 # @@protoc_insertion_point(module_scope)

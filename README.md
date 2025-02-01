@@ -1,4 +1,7 @@
 # DressyProtosFiles
+
+# Прошу использовать MacOS/Linux, Windows не поддерживается в данной сборке
+
 For C# Generation
 ```
 MacOS
